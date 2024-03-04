@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_02c5495a4fec5d88110fd511c5e276ee" kind="dir">
+    <compoundname>test</compoundname>
+    <innerfile refid="001-TestCase__Requirements_8cpp">001-TestCase_Requirements.cpp</innerfile>
+    <innerfile refid="002-TestCase__ComputerPlayer_8cpp">002-TestCase_ComputerPlayer.cpp</innerfile>
+    <innerfile refid="003-TestCase__Session__and__Player_8cpp">003-TestCase_Session_and_Player.cpp</innerfile>
+    <innerfile refid="marked__dice_8hpp">marked_dice.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/test/"/>
+  </compounddef>
+</doxygen>

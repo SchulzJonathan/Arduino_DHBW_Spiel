@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_17970de91eb624507a74aaad367e0c70" kind="dir">
+    <compoundname>COD_ENG_CALC_calculators</compoundname>
+    <innerfile refid="color__calculator_8cpp">color_calculator.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_CALC_calculators/"/>
+  </compounddef>
+</doxygen>

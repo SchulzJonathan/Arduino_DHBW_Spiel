@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classLOGIC_1_1cla__manual__player" kind="class" language="C++" prot="public">
+    <compoundname>LOGIC::cla_manual_player</compoundname>
+    <basecompoundref refid="classLOGIC_1_1cla__player" prot="public" virt="non-virtual">LOGIC::cla_player</basecompoundref>
+    <includes refid="logic_8hpp" local="no">logic.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLOGIC_1_1cla__manual__player_1aadfdca090d871dd059a2dbec57d8fcb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOGIC::cla_manual_player::cla_manual_player</definition>
+        <argsstring>(uint8_t _u8_player_id, uint8_t _u8_start_position, uint8_t _u8_computer_quantity, cla_session *_obj_my_session)</argsstring>
+        <name>cla_manual_player</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_start_position</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_computer_quantity</declname>
+        </param>
+        <param>
+          <type><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref> *</type>
+          <declname>_obj_my_session</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classLOGIC_1_1cla__manual__player" kindref="compound">cla_manual_player</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="243" column="3" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__manual__player_1aa959494f63541415a95b9a72040a9e3c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool LOGIC::cla_manual_player::Is_Computer</definition>
+        <argsstring>() const override</argsstring>
+        <name>Is_Computer</name>
+        <reimplements refid="classLOGIC_1_1cla__player_1a5f7af12ee434a5e52f9f6b915f4eff26">Is_Computer</reimplements>
+        <briefdescription>
+<para>Checks if the player is a computer opponent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the player is a computer opponent, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="246" column="16" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="246" bodyend="246"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents a manual player in a game. It is derived from the <ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>LOGIC::cla_player</label>
+        <link refid="classLOGIC_1_1cla__player"/>
+      </node>
+      <node id="1">
+        <label>LOGIC::cla_manual_player</label>
+        <link refid="classLOGIC_1_1cla__manual__player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>LOGIC::cla_player</label>
+        <link refid="classLOGIC_1_1cla__player"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj_my_session</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LOGIC::cla_manual_player</label>
+        <link refid="classLOGIC_1_1cla__manual__player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LOGIC::cla_session</label>
+        <link refid="classLOGIC_1_1cla__session"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>array_players</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="238" column="1" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="238" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classLOGIC_1_1cla__player_1ab7f32fcee2004a688a1460113f85c96a" prot="public" virt="virtual"><scope>LOGIC::cla_manual_player</scope><name>Auto_Move</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a282fd5e0969fac08058069e87d7a3862" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Calculate_Possible_Position</name></member>
+      <member refid="classLOGIC_1_1cla__manual__player_1aadfdca090d871dd059a2dbec57d8fcb3" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>cla_manual_player</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ae50a20169ea2277cd55998eb92428f06" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>cla_player</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a36242f4593e02368371f34d84dd8ac45" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Get_Player_Progress</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ab5b9a21565141948deec8c3054617cbd" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Get_Player_Status</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ab5c4546ebf8e4665210452c5497bb91e" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Get_Start_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1aabf38e935588dae1a3f317165b8e59ce" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Get_Token_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a66ec5e5be3edfaa5427f844fbf48b0b2" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Get_Token_Progress</name></member>
+      <member refid="classLOGIC_1_1cla__manual__player_1aa959494f63541415a95b9a72040a9e3c" prot="public" virt="virtual"><scope>LOGIC::cla_manual_player</scope><name>Is_Computer</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ac5019340cd2420422b751c6da790c432" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Is_Start_Field_Occupied_By_Own_Token</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a53374f47a37c2efa0c591ff30a1ad0cc" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Move_Token</name></member>
+      <member refid="classLOGIC_1_1cla__player_1aac546958e8055055c5e0c574ddfcefdc" prot="protected" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>obj_my_session</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a83b1cea613c6c0c495ea586bfaf07a69" prot="public" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>Set_Token_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ae246e769b12eba6c8716d16e032a109a" prot="protected" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>u8_player_id</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a7dc2813d75bd9f8d4932bc553089c91b" prot="protected" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>u8_start_position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ac6bb95fd9891b1d9d131a35112dd5c7e" prot="protected" virt="non-virtual"><scope>LOGIC::cla_manual_player</scope><name>u8_token_position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

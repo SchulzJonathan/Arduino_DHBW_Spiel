@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespaceLOGIC" kind="namespace" language="C++">
+    <compoundname>LOGIC</compoundname>
+    <innerclass refid="classLOGIC_1_1cla__session" prot="public">LOGIC::cla_session</innerclass>
+    <innerclass refid="classLOGIC_1_1cla__player" prot="public">LOGIC::cla_player</innerclass>
+    <innerclass refid="classLOGIC_1_1cla__computer__player" prot="public">LOGIC::cla_computer_player</innerclass>
+    <innerclass refid="classLOGIC_1_1cla__manual__player" prot="public">LOGIC::cla_manual_player</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>status</name>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6a5ebb8b832ba328bd51ef5d556f4a938f" prot="public">
+          <name>Start</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6a415c6ddf8b5a0d4538cbc518252b6b52" prot="public">
+          <name>Start_Track</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ae9c281be3b3742924c3c47b255e7f79e" prot="public">
+          <name>Start_Finished</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ae6ca6c715925995d00ad6824d91665d6" prot="public">
+          <name>Start_Track_Finished</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ac42ba10018503fded138601bd50ba8dc" prot="public">
+          <name>Error</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6acb974776ea44dc1e3d112ffb9c7f0386" prot="public">
+          <name>Track</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6afb54686db70004b8c7973b4f490abb20" prot="public">
+          <name>Finished</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ad3e7aea9c485ce66c627edf0221a16ed" prot="public">
+          <name>Track_Finished</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="34" column="1" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="34" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="enum" id="logic_8hpp_1a8c1decbe2bb0ec585d5c15608f34b8d1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mode</name>
+        <enumvalue id="logic_8hpp_1a8c1decbe2bb0ec585d5c15608f34b8d1a13a4ecadc5b54cec431b57d2eb6a9611" prot="public">
+          <name>Student</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="logic_8hpp_1a8c1decbe2bb0ec585d5c15608f34b8d1aac30a805d18ec48cb11ddc5b0009b609" prot="public">
+          <name>Professor</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="45" column="1" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" line="20" column="1"/>
+  </compounddef>
+</doxygen>

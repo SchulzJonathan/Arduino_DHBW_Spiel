@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_e46236678326602fb51a33a9a20e1fb4" kind="dir">
+    <compoundname>COD_ENG_OUT_arduino_code</compoundname>
+    <innerdir refid="dir_32fda5728acd4db3cc42f60aad9a9fcc">include</innerdir>
+    <innerdir refid="dir_4020720c6a555fbd5bcbb296f9427588">lib</innerdir>
+    <innerdir refid="dir_38410eb1dec6281e0e0807d9e6ad57cf">src</innerdir>
+    <innerdir refid="dir_02c5495a4fec5d88110fd511c5e276ee">test</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/"/>
+  </compounddef>
+</doxygen>

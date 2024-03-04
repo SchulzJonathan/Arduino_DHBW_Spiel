@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="color__calculator_8cpp" kind="file"><name>color_calculator.cpp</name>
+    <member refid="color__calculator_8cpp_1a4945d87188f5e6a7ec43aeeb3eaa1410" kind="function"><name>getColor</name></member>
+    <member refid="color__calculator_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_17970de91eb624507a74aaad367e0c70" kind="dir"><name>COD_ENG_CALC_calculators</name>
+  </compound>
+  <compound refid="dir_6774b76becf5c1eba00b38f86dafd5a0" kind="dir"><name>Engineering</name>
+  </compound>
+</doxygenindex>

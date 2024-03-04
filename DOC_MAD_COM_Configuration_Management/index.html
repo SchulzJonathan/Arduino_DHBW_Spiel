@@ -1,0 +1,1592 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../DOC_MAD_SR_coding_rules/">
+      
+      
+        <link rel="next" href="../DOC_TES_CAS_Test_Cases/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>Configuration Management - Student Ärgere Dich nicht!</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@10.8.0/dist/mermaid.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#github-repository" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Student Ärgere Dich nicht!" class="md-header__button md-logo" aria-label="Student Ärgere Dich nicht!" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Student Ärgere Dich nicht!
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configuration Management
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Student Ärgere Dich nicht!" class="md-nav__button md-logo" aria-label="Student Ärgere Dich nicht!" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Student Ärgere Dich nicht!
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_REQ_RE_Requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design Description
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Design Description
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_DED_SYA_System_Architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Architektur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_DED_SOA_Software_Architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Architektur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Management and Development Plan
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Management and Development Plan
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_MAD_SH_Schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_MAD_CRO_Cost_Risk_Opportunities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost, Risk and Opportunity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_MAD_SR_coding_rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coding Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuration Management
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Configuration Management
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Github Repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Github Repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordner-struktur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordner-Struktur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regeln-zur-dateibenennung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regeln zur Dateibenennung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-codespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Github Codespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmake-organisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      CMake Organisation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nutzung-von-platformio-fur-die-mikrocomputerprogrammierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nutzung von PlatformIO für die Mikrocomputerprogrammierung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatisches-bauen-der-projektwebsite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatisches Bauen der Projektwebsite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lokales-hosten-der-projektwebsite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lokales Hosten der Projektwebsite
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lokales Hosten der Projektwebsite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-installation-von-doxygen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 1: Installation von Doxygen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-erstellen-eines-python-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 2: Erstellen eines Python Environments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-erstellen-und-hosten-der-seite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 3: Erstellen und Hosten der Seite
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onedrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Onedrive
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_TES_CAS_Test_Cases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Specification and Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Engineering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_ENG_TA_Trades_Analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trades and Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DOC_ENG_DA_Additional_Drawings_and_Datasheets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Device Code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Device Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceCode/links/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All Pages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceCode/files/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceCode/annotated/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceCode/namespaces/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceCode/functions/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceCode/variables/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DeviceCode/macros/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Makros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Test Code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Test Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestCode/links/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All Pages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestCode/files/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestCode/annotated/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestCode/namespaces/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestCode/functions/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestCode/variables/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TestCode/macros/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Makros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Calculations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Calculations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculations/links/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All Pages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculations/files/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculations/annotated/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculations/namespaces/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculations/functions/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculations/variables/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Calculations/macros/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Makros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Github Repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Github Repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ordner-struktur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ordner-Struktur
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regeln-zur-dateibenennung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Regeln zur Dateibenennung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-codespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Github Codespace
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cmake-organisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      CMake Organisation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nutzung-von-platformio-fur-die-mikrocomputerprogrammierung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nutzung von PlatformIO für die Mikrocomputerprogrammierung
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automatisches-bauen-der-projektwebsite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatisches Bauen der Projektwebsite
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lokales-hosten-der-projektwebsite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lokales Hosten der Projektwebsite
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lokales Hosten der Projektwebsite">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schritt-1-installation-von-doxygen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 1: Installation von Doxygen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-2-erstellen-eines-python-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 2: Erstellen eines Python Environments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schritt-3-erstellen-und-hosten-der-seite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schritt 3: Erstellen und Hosten der Seite
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#onedrive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Onedrive
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Configuration Management</h1>
+
+<h2 id="github-repository">Github Repository</h2>
+<h3 id="ordner-struktur">Ordner-Struktur</h3>
+<p>Im Github Repository ist die nachfolgende Ordnerstruktur zu finden.</p>
+<ul>
+<li>Requirements </li>
+<li>Design_Description</li>
+<li>Management_Development</li>
+<li>Test_Specification_Report</li>
+<li>Engineering</li>
+</ul>
+<p>Es ist darauf zu achten, die Dateien im richtigen Ordner abzulegen. Die Ordner <code>docs</code>, <code>.devcontainer</code> und <code>.github</code> dienen ausschließlich dem Ablegen von Konfigurationsdateien!</p>
+<h3 id="regeln-zur-dateibenennung">Regeln zur Dateibenennung</h3>
+<p>Dateien müssen nach den folgenden Schema benannt werden:</p>
+<div class="highlight"><pre><span></span><code>&lt;Dateityp&gt;_&lt;Ordnerkürzel&gt;_&lt;Kurzname&gt;_&lt;dateiname (individuell)&gt;.&lt;Dateiendung&gt;
+</code></pre></div>
+<p>Dateityp:</p>
+<ul>
+<li><code>DOC</code> für Dokumentation</li>
+<li><code>COD</code> für Code. Bei Code reicht die Anwendung dieses Schemas auf den übergeordneten Ordner.</li>
+<li><code>PIC</code> für Bilder (nur falls zwingend notwendig für die Dokumentation!)</li>
+<li><code>CAD</code> für CAD-Dateien.</li>
+</ul>
+<p>Ordnerkürzel:</p>
+<ul>
+<li>Requirements: <code>REQ</code></li>
+<li>Design_Description: <code>DED</code></li>
+<li>Management_Development: <code>MAD</code></li>
+<li>Test_Specification_Report: <code>TES</code></li>
+<li>Engineering: <code>ENG</code></li>
+</ul>
+<p>Kurzname: Kurzname, individuell. 2-3 Buchstaben.</p>
+<p>Dateiname: ausgeschriebener Dateiname. Leerzeichen mit Unterstrich.</p>
+<div style="background: #8b0000; color: white; padding: 10px; margin: 10px;">
+Eine korrekte Benennung der Dateien ist unerlässlich für das automatische Bauen der Projektwebsite.
+</div>
+
+<h3 id="github-codespace">Github Codespace</h3>
+<p>Für die Programmierung der Spiellogik wurde ein Github Codespace eingerichtet. In diesem sind benötigte Abhängigkeiten für die Entwicklung der Spiellogik Bibliothek bereits vorinstalliert. Für die Programmierung des Gerätecodes eignet sich dieser Codespace jedoch weniger, da eine Anbindung von Hardwarekomponenten (Programmer) an den Codespace konfigurationsbedingt nicht möglich ist. Für diesen Fall empfielt sich die lokale Nutzung von PlatformIO auf einem Rechner mit Linux-basierten Betriebssystem.</p>
+<p>Der Github Codespace verwendet die in der Datei <code>.devcontainer/Dockerfile</code> enthaltene Docker-Konfiguration. Diese kann alternativ zur Nutzung mit dem Github-Codespace auch als lokaler Docker-Container genutzt werden.</p>
+<h3 id="cmake-organisation">CMake Organisation</h3>
+<p>Um die Spielelogik zu entwickeln und testen wird CMake verwendet. Die Header und Source Files der Logik befinden sich in einem Unterordner im lib-Verzeichnes (<code>Game_Logic</code>). Im gleichem Pfad befindet sich die erste von 2 CMakeLists.txt, diese gibt vor wie das Projekt gebaut werden muss und wo der Code der Logik und der Tests zu finden sind.
+Die Logik wird mittels Catch2 Tests im Test-Verzeichnis auf Funktionsfähigkeit geprüft. In diesem Pfad befindet sich die zweite CMakeLists.txt, diese dient zur Konfiguration der Catch2-Tests. 
+Das ganze Projekt kann durch den Befehl <code>./runcmake.sh</code> in der Kommandozeile gebaut werden. Dabei werden auch im Anschluss die erstellten Testdateien ausgeführt.</p>
+<h2 id="nutzung-von-platformio-fur-die-mikrocomputerprogrammierung">Nutzung von PlatformIO für die Mikrocomputerprogrammierung</h2>
+<p>Für die Programmierung des Arduinos wurde die <code>PlatformIO</code> Extension für <code>VSCode</code> verwendet. Dies bietet insbesondere beim Einbinden und Verwalten von Bibliotheken enorme Vorteile gegenüber der <code>ArduinoIDE</code>. PlatformIO bietet dabei eine Grafische Oberfläche zum Kompilieren und Flashen des Codes sowie einen Seriellen Monitor zum Auslesen der Seriellen Schnittstelle.</p>
+<h2 id="automatisches-bauen-der-projektwebsite">Automatisches Bauen der Projektwebsite</h2>
+<p>Die Gesamte Projektdokumentation ist über eine Projektwebsite einsehbar. Diese Website wird bei jedem Push auf dem Main Branch automatisch neu gebaut. Für das Bauen der Website kommt das Programm <code>mkdocs</code> zum Einsatz. Dieses wurde so konfiguriert, dass eine Einbindung von in <code>Mermaid</code> oder <code>PlantUML</code> gezeichneten Grafiken möglich ist. <code>mkdocs</code> bezieht den Inhalt der Website aus den in den jeweiligen Ordnern gespeicherten Markdown-Dateien, die die Dokumentation enthalten. Diese werden beim Automatischen Bauen der Website zusammengesucht und für die Veröffentlichung in HTML umgewandelt. Darüber hinaus wird mit Doxygen eine Code-Dokumentation erzeugt, die dann ebenfalls über die Website einsehbar ist.</p>
+<h2 id="lokales-hosten-der-projektwebsite">Lokales Hosten der Projektwebsite</h2>
+<p>Zu Testzwecken kann es durchaus sinnvoll sein, die Projektwebsite temporär lokal zu Hosten, z.B. um die korrekte Einbindung von Grafiken zu testen. Im folgenden wird Schritt für Schritt erklärt, wie die Website lokal gehostet werden kann.</p>
+<p>Die folgende Anleitung erklärt das Vorgehen bei der Verwendung von Linux oder MacOS. Für Windows-Nutzer empfielt sich die Nutzung des Windows Subsystem for Linux (WSL) oder des in der Datei <code>.devcontainer/Dockerfile</code> konfigurierten Docker-Containers.</p>
+<p>In den folgenden Schritten wird davon ausgegangen, das ein Terminal-Fenster in der obersten Ebene der Ordnerstruktur des Projektes geöffnet wurde. Eventuell müssen Shell-Skripte mittels 
+<div class="highlight"><pre><span></span><code>chmod<span class="w"> </span>+x<span class="w"> </span>&lt;Pfad/Dateiname.sh&gt;
+</code></pre></div>
+ausführbar gemacht werden. Der Teil <code>&lt;Pfad/Dateiname.sh&gt;</code> ist dabei durch den Pfad und Dateinamen des betroffenen Shell-Skriptes zu ersetzen.</p>
+<h3 id="schritt-1-installation-von-doxygen">Schritt 1: Installation von Doxygen</h3>
+<p>Mkdocs benötigt doxygen für das Bauen der Website. Mit </p>
+<div class="highlight"><pre><span></span><code>doxygen<span class="w"> </span>--version
+</code></pre></div>
+<p>kann geprüft werden, ob doxygen bereits installiert ist. Sollte dies nicht der Fall sein, kann doxygen mit den Befehlen</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>doxygen<span class="w"> </span><span class="c1"># Linux</span>
+</code></pre></div>
+<p>installiert werden. Bei der Nutzung von MacOS empfielt sich die Nutzung von Homebrew, falls dieses bereits installiert ist:</p>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>doxygen<span class="w"> </span><span class="c1"># MacOS</span>
+</code></pre></div>
+<h3 id="schritt-2-erstellen-eines-python-environments">Schritt 2: Erstellen eines Python Environments</h3>
+<p>Für das Erstellen eines Python Environments wurde ein Shell-Skript geschrieben, mit dem das Environment automatisch erstellt und konfiguriert wird. Dazu ist der folgende Befehl im Terminal einzugeben:</p>
+<div class="highlight"><pre><span></span><code>./docs/env_setup.sh
+</code></pre></div>
+<h3 id="schritt-3-erstellen-und-hosten-der-seite">Schritt 3: Erstellen und Hosten der Seite</h3>
+<p>Mit dem Skript</p>
+<div class="highlight"><pre><span></span><code>./docs/launch_site.sh
+</code></pre></div>
+<p>wird das soeben erstellte Python-environment automatisch gestartet und der Befehl <code>mkdocs serve</code> ausgeführt, welcher die Website unter <code>http://127.0.0.1:8000/</code> verfügbar macht.</p>
+<p>Mit der Tastenkombination <code>Strg</code>+ <code>C</code> (<code>control</code> + <code>C</code> unter MacOS) kann Mkdocs wieder beendet werden. Zum erneuten Starten kann direkt bei Schritt 3 eingestiegen werden.</p>
+<p>Darüber hinaus kann die Website mit </p>
+<div class="highlight"><pre><span></span><code>./docs/copy_docs.sh
+</code></pre></div>
+<p>aktualisiert werden.</p>
+<div class="highlight"><pre><span></span><code>./docs/remove_docs.sh
+</code></pre></div>
+<p>räumt den <code>docs/docs</code>-Ordner auf. Die Verwendung des Skriptes empfielt sich nach dem Abschluss der Arbeiten mit MkDocs.</p>
+<div style="background: #E0FFE0; padding: 10px; margin: 10px;">
+<b>Tipp:</b> Alternativ zum Hosten der Seite kann auch der Quellcode erzeugt werden. Dazu muss zuerst das Python-Environment mittels <code>source docs/env/bin/activate</code> aktiviert werden. Anschließend kann durch Ausführen des Befehls <code>mkdocs build</code> im <code>docs/</code>-Ordner die Seite gebaut werden. Der Quellcode ist dann im Ordner <code>docs/site</code> zu finden.<br>
+Diese Möglichkeit eignet sich zu Untersuchen der Dateistruktur und des Websiteaufbaus, ist aber zum Betrachten der Seite eher ungeeignet, da CSS-Stylesheets eventuell nicht korrekt verlinkt werden.
+</div>
+
+<div style="background: #8b0000; color: white; padding: 10px; margin: 10px;">
+Automatisch generierte Ordner dürfen nicht auf das Repository gepusht werden!
+</div>
+
+<h2 id="onedrive">Onedrive</h2>
+<p>Da Github für die Verwaltung ausgewählter Dateitypen wie beispielsweise <code>.xlsx</code>-Dateien eher ungeeignet ist, steht für diese Dateien als Ausweich-Option ein Onedrive-Ordner zur Verfügung. In diesem Ordner ist dieselbe Ordnerstruktur vorhanden, wie sie im Kapitel <a href="#Ordner-Struktur">Ordner-Struktur</a> bereits für das Github-Repository erläutert wurde. </p>
+<div style="background: #8b0000; color: white; padding: 10px; margin: 10px;">
+Beim Ablegen einer Datei auf OneDrive ist darauf zu achten, im zugehörigen Teil der Dokumentation auf dem Git-Repository auf die Datei zu verweisen/-linken.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10.8.0/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="color__calculator_8cpp" kind="file" language="C++">
+    <compoundname>color_calculator.cpp</compoundname>
+    <includes local="no">inttypes.h</includes>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>color_calculator.cpp</label>
+        <link refid="color__calculator_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="2">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="color__calculator_8cpp_1a4945d87188f5e6a7ec43aeeb3eaa1410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t getColor</definition>
+        <argsstring>(uint8_t r, uint8_t g, uint8_t b)</argsstring>
+        <name>getColor</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>This function calculates the 16 bit color value from the given RGB values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red value of the color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green value of the color. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue value of the color. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The 16 bit color value to be used for the LED matrix. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_CALC_calculators/color_calculator.cpp" line="30" column="10" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_CALC_calculators/color_calculator.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="color__calculator_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_CALC_calculators/color_calculator.cpp" line="34" column="5" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_CALC_calculators/color_calculator.cpp" bodystart="34" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains the implementation of the color calculator. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The color calculator is used to calculate the 16 bit color value from RGB values. The 16 Bit intgeger can then be used for the Matrix library directly. This reduces the startuptime of the arduino compared to setting the RGB values in the Setup routine.</para>
+<para>The color calculator expects the Values in RGB order. Values can reach from 0 to 255. Be careful as You will NOT be told when input is invalid.</para>
+<para>compile with: <computeroutput>gcc <ref refid="color__calculator_8cpp" kindref="compound">color_calculator.cpp</ref> -o color_calculator</computeroutput></para>
+<para>Run with: <computeroutput>./color_calculator</computeroutput> </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">uint16_t<sp/><ref refid="color__calculator_8cpp_1a4945d87188f5e6a7ec43aeeb3eaa1410" kindref="member">getColor</ref>(uint8_t<sp/>r,<sp/>uint8_t<sp/>g,<sp/>uint8_t<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((uint16_t)(r<sp/>&amp;<sp/>0xF8)<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>((uint16_t)(g<sp/>&amp;<sp/>0xFC)<sp/>&lt;&lt;<sp/>3)<sp/>|<sp/>(b<sp/>&gt;&gt;<sp/>3);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inputr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inputg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inputb<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%i&quot;</highlight><highlight class="normal">,<sp/>&amp;inputr);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%i&quot;</highlight><highlight class="normal">,<sp/>&amp;inputg);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%i&quot;</highlight><highlight class="normal">,<sp/>&amp;inputb);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>uint16_t<sp/>i<sp/>=<sp/><ref refid="color__calculator_8cpp_1a4945d87188f5e6a7ec43aeeb3eaa1410" kindref="member">getColor</ref>(inputr,<sp/>inputg,<sp/>inputb);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;0x%02x\n&quot;</highlight><highlight class="normal">,<sp/>i);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_CALC_calculators/color_calculator.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="logic_8hpp" kind="file" language="C++">
+    <compoundname>logic.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="logic_8cpp" local="yes">logic.cpp</includedby>
+    <includedby refid="animations_8cpp" local="no">animations.cpp</includedby>
+    <includedby refid="interupt_8cpp" local="no">interupt.cpp</includedby>
+    <includedby refid="main_8cpp" local="no">main.cpp</includedby>
+    <includedby refid="001-TestCase__Requirements_8cpp" local="no">001-TestCase_Requirements.cpp</includedby>
+    <includedby refid="002-TestCase__ComputerPlayer_8cpp" local="no">002-TestCase_ComputerPlayer.cpp</includedby>
+    <includedby refid="003-TestCase__Session__and__Player_8cpp" local="no">003-TestCase_Session_and_Player.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+      <node id="1">
+        <label>logic.hpp</label>
+        <link refid="logic_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>logic.cpp</label>
+        <link refid="logic_8cpp"/>
+      </node>
+      <node id="4">
+        <label>interupt.cpp</label>
+        <link refid="interupt_8cpp"/>
+      </node>
+      <node id="6">
+        <label>001-TestCase_Requirements.cpp</label>
+        <link refid="001-TestCase__Requirements_8cpp"/>
+      </node>
+      <node id="1">
+        <label>logic.hpp</label>
+        <link refid="logic_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>animations.cpp</label>
+        <link refid="animations_8cpp"/>
+      </node>
+      <node id="7">
+        <label>002-TestCase_ComputerPlayer.cpp</label>
+        <link refid="002-TestCase__ComputerPlayer_8cpp"/>
+      </node>
+      <node id="5">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="8">
+        <label>003-TestCase_Session_and_Player.cpp</label>
+        <link refid="003-TestCase__Session__and__Player_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLOGIC_1_1cla__session" prot="public">LOGIC::cla_session</innerclass>
+    <innerclass refid="classLOGIC_1_1cla__player" prot="public">LOGIC::cla_player</innerclass>
+    <innerclass refid="classLOGIC_1_1cla__computer__player" prot="public">LOGIC::cla_computer_player</innerclass>
+    <innerclass refid="classLOGIC_1_1cla__manual__player" prot="public">LOGIC::cla_manual_player</innerclass>
+    <innernamespace refid="namespaceLOGIC">LOGIC</innernamespace>
+    <briefdescription>
+<para>This file is the header file for the game logic library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This file contains the declaration of the classes cla_session, cla_player, cla_computer_player and cla_manual_player. The cla_session class is the main class of the game logic. It initializes the players with their methods and it provides essential methods for the game logic. The cla_player class represents a player in the game. It provides methods for moving tokens and checking the status of the player. It is an abstract class and has two derived classes:<itemizedlist>
+<listitem><para>cla_computer_player</para>
+</listitem><listitem><para>cla_manual_player. The cla_computer_player class represents a computer opponent in the game. It provides methods for automatic movement of tokens. The cla_manual_player class represents a manual player in a game. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LOGIC_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOGIC_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__AVR__<sp/></highlight><highlight class="comment">//<sp/>For<sp/>arduino</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">LOGIC<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration<sp/>of<sp/>cla_player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">cla_player;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>Start<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>Start_Track,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>Start_Finished,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>Start_Track_Finished,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>Error,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>Track,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>Finished,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>Track_Finished,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/>status;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>Student<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>Professor<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/>mode;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classLOGIC_1_1cla__session" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="classLOGIC_1_1cla__session_1ab6c6a55bd57bcfaba726fd9c2dd3fd37" kindref="member">cla_session</ref>(uint8_t<sp/>_u8_player_quantity,<sp/>uint8_t<sp/>_u8_computer_quantity,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mode<sp/>_en_mode);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classLOGIC_1_1cla__session_1a9d49627f1f54693a09ccd596f712c906" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref><sp/>*<ref refid="classLOGIC_1_1cla__session_1a9d49627f1f54693a09ccd596f712c906" kindref="member">array_players</ref>[4];<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLOGIC_1_1cla__session_1a648aca267cce6fb4e1cb3153095f7c6e" kindref="member">Is_Occupied</ref>(uint8_t<sp/>&amp;_u8_is_occupied_player_id,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>&amp;_u8_is_occupied_token_number,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_affected_track_position);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLOGIC_1_1cla__session_1ade13b4609f27a40e107f00bbdd080a54" kindref="member">Return_Home</ref>(uint8_t<sp/>_u8_affected_track_position);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__session_1a42b01279aeb55ee3c7e131077faff20e" kindref="member">Get_Player_Quantity</ref>();<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__session_1a6745ea09eacc52f0413009d0cdc67862" kindref="member">Get_Computer_Quantity</ref>();<sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classLOGIC_1_1cla__session_1abb7a7766af30dc205a622bf2e561b05a" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__session_1abb7a7766af30dc205a622bf2e561b05a" kindref="member">u8_is_occupied_player_id</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="classLOGIC_1_1cla__session_1a46b5358192e433995fc5eeda35504fe4" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__session_1a46b5358192e433995fc5eeda35504fe4" kindref="member">u8_is_occupied_token_number</ref>;<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_player_quantity;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_computer_quantity;<sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="classLOGIC_1_1cla__player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="classLOGIC_1_1cla__player_1ae50a20169ea2277cd55998eb92428f06" kindref="member">cla_player</ref>(uint8_t<sp/>_u8_player_id,<sp/>uint8_t<sp/>_u8_start_position,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_computer_quantity,<sp/><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref><sp/>*_obj_my_session);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1a282fd5e0969fac08058069e87d7a3862" kindref="member">Calculate_Possible_Position</ref>(uint8_t<sp/>_u8_token_number,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_dice_value);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1a53374f47a37c2efa0c591ff30a1ad0cc" kindref="member">Move_Token</ref>(uint8_t<sp/>_u8_token_number,<sp/>uint8_t<sp/>_u8_dice_value);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>int8_t<sp/><ref refid="classLOGIC_1_1cla__player_1ac5019340cd2420422b751c6da790c432" kindref="member">Is_Start_Field_Occupied_By_Own_Token</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1aabf38e935588dae1a3f317165b8e59ce" kindref="member">Get_Token_Position</ref>(uint8_t<sp/>_u8_token_number);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1a83b1cea613c6c0c495ea586bfaf07a69" kindref="member">Set_Token_Position</ref>(uint8_t<sp/>_u8_token_number,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_new_position);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1a66ec5e5be3edfaa5427f844fbf48b0b2" kindref="member">Get_Token_Progress</ref>(uint8_t<sp/>_u8_token_number);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>status<sp/><ref refid="classLOGIC_1_1cla__player_1ab5b9a21565141948deec8c3054617cbd" kindref="member">Get_Player_Status</ref>();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1a36242f4593e02368371f34d84dd8ac45" kindref="member">Get_Player_Progress</ref>();</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classLOGIC_1_1cla__player_1a5f7af12ee434a5e52f9f6b915f4eff26" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLOGIC_1_1cla__player_1a5f7af12ee434a5e52f9f6b915f4eff26" kindref="member">Is_Computer</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>uint8_t</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><ref refid="classLOGIC_1_1cla__player_1ab5c4546ebf8e4665210452c5497bb91e" kindref="member">Get_Start_Position</ref>();<sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>int8_t<sp/>Auto_Move(uint8_t<sp/>_u8_dice_value,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;_bool_occupied_flag,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>&amp;_u8_old_position);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="192" refid="classLOGIC_1_1cla__player_1a7dc2813d75bd9f8d4932bc553089c91b" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1a7dc2813d75bd9f8d4932bc553089c91b" kindref="member">u8_start_position</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="193" refid="classLOGIC_1_1cla__player_1ac6bb95fd9891b1d9d131a35112dd5c7e" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1ac6bb95fd9891b1d9d131a35112dd5c7e" kindref="member">u8_token_position</ref>[4];<sp/></highlight></codeline>
+<codeline lineno="194" refid="classLOGIC_1_1cla__player_1ae246e769b12eba6c8716d16e032a109a" refkind="member"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="classLOGIC_1_1cla__player_1ae246e769b12eba6c8716d16e032a109a" kindref="member">u8_player_id</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="195" refid="classLOGIC_1_1cla__player_1aac546958e8055055c5e0c574ddfcefdc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref><sp/>*<ref refid="classLOGIC_1_1cla__player_1aac546958e8055055c5e0c574ddfcefdc" kindref="member">obj_my_session</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="classLOGIC_1_1cla__computer__player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLOGIC_1_1cla__computer__player" kindref="compound">cla_computer_player</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref><sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><ref refid="classLOGIC_1_1cla__computer__player_1a01c27c08a102642ae508eace9a725094" kindref="member">cla_computer_player</ref>(uint8_t<sp/>_u8_player_id,<sp/>uint8_t<sp/>_u8_start_position,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_computer_quantity,</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref><sp/>*_obj_my_session,<sp/>mode<sp/>_en_mode);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>int8_t<sp/><ref refid="classLOGIC_1_1cla__computer__player_1aa8eded142250f48bddb148faab855159" kindref="member">Auto_Move</ref>(uint8_t<sp/>_u8_dice_value,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;_bool_occupied_flag,</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>&amp;_u8_old_position)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="classLOGIC_1_1cla__computer__player_1a30916d96bd3812bddfc0ad4399eed67c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLOGIC_1_1cla__computer__player_1a30916d96bd3812bddfc0ad4399eed67c" kindref="member">Is_Computer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="230" refid="classLOGIC_1_1cla__computer__player_1acb2b156882646d003e6c5425fcee04c8" refkind="member"><highlight class="normal"><sp/><sp/>mode<sp/><ref refid="classLOGIC_1_1cla__computer__player_1acb2b156882646d003e6c5425fcee04c8" kindref="member">en_mode</ref>;<sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="classLOGIC_1_1cla__manual__player" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLOGIC_1_1cla__manual__player" kindref="compound">cla_manual_player</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><ref refid="classLOGIC_1_1cla__manual__player_1aadfdca090d871dd059a2dbec57d8fcb3" kindref="member">cla_manual_player</ref>(uint8_t<sp/>_u8_player_id,<sp/>uint8_t<sp/>_u8_start_position,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_computer_quantity,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref><sp/>*_obj_my_session);</highlight></codeline>
+<codeline lineno="246" refid="classLOGIC_1_1cla__manual__player_1aa959494f63541415a95b9a72040a9e3c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLOGIC_1_1cla__manual__player_1aa959494f63541415a95b9a72040a9e3c" kindref="member">Is_Computer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>LOGIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>LOGIC_HPP</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp"/>
+  </compounddef>
+</doxygen>

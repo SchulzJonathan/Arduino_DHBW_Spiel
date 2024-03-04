@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classLOGIC_1_1cla__computer__player" kind="class"><name>LOGIC::cla_computer_player</name>
+    <member refid="classLOGIC_1_1cla__computer__player_1acb2b156882646d003e6c5425fcee04c8" kind="variable"><name>en_mode</name></member>
+    <member refid="classLOGIC_1_1cla__computer__player_1a01c27c08a102642ae508eace9a725094" kind="function"><name>cla_computer_player</name></member>
+    <member refid="classLOGIC_1_1cla__computer__player_1aa8eded142250f48bddb148faab855159" kind="function"><name>Auto_Move</name></member>
+    <member refid="classLOGIC_1_1cla__computer__player_1a30916d96bd3812bddfc0ad4399eed67c" kind="function"><name>Is_Computer</name></member>
+  </compound>
+  <compound refid="classASL_1_1cla__display" kind="class"><name>ASL::cla_display</name>
+    <member refid="classASL_1_1cla__display_1a218a1025ddcb08359dd25895c8a5202a" kind="variable"><name>u8_matrix_a</name></member>
+    <member refid="classASL_1_1cla__display_1a49b77b0545857860b3cefac3bcc6345b" kind="variable"><name>u8_matrix_b</name></member>
+    <member refid="classASL_1_1cla__display_1a40d346535013095a77ea2283a825cad4" kind="variable"><name>u8_matrix_c</name></member>
+    <member refid="classASL_1_1cla__display_1a116f16132c553ac0faf09860e3d4269f" kind="variable"><name>u8_matrix_clk</name></member>
+    <member refid="classASL_1_1cla__display_1acd2f871d901e0accf10c47e7cfaa8d59" kind="variable"><name>u8_matrix_lat</name></member>
+    <member refid="classASL_1_1cla__display_1a3e09791c1975f8a5592f981a3cc2ab1b" kind="variable"><name>u8_matrix_oe</name></member>
+    <member refid="classASL_1_1cla__display_1aabbb80655b217c843d02c0b35890405e" kind="variable"><name>obj_matrix</name></member>
+    <member refid="classASL_1_1cla__display_1a064ac2953722d68630a4a2fe4d3cba4d" kind="variable"><name>u8_track_positions</name></member>
+    <member refid="classASL_1_1cla__display_1a4244dac564ee64eb39d8e14ec474131c" kind="variable"><name>u8_home_positions</name></member>
+    <member refid="classASL_1_1cla__display_1a9805118a48808f72793a4e1ca05b00cf" kind="variable"><name>u8_finish_positions</name></member>
+    <member refid="classASL_1_1cla__display_1ac21190bb14e028f08fe7c526cf4027f8" kind="variable"><name>u8_smiley_postitions</name></member>
+    <member refid="classASL_1_1cla__display_1a346aaa33dcc388151822e11161159fdc" kind="variable"><name>u16_player_color</name></member>
+    <member refid="classASL_1_1cla__display_1ad5705fd505c2acfef8207b92696b2a11" kind="variable"><name>u16_track_color</name></member>
+    <member refid="classASL_1_1cla__display_1a67b523cfc082af4c9d1ac8a635b631c8" kind="variable"><name>en_current_blink_mode</name></member>
+    <member refid="classASL_1_1cla__display_1aae3871e27bcd516963447b8991558386" kind="variable"><name>i8_blink_counter</name></member>
+    <member refid="classASL_1_1cla__display_1a82904982b2410e4276b7aea7faadc48e" kind="variable"><name>en_current_blink_type</name></member>
+    <member refid="classASL_1_1cla__display_1a56c7ffa332cea15acbdf147f048f757e" kind="variable"><name>u8_blink_player_number</name></member>
+    <member refid="classASL_1_1cla__display_1aa01a1d4c70b43afa74de74454852b1df" kind="variable"><name>i8_blink_second_player</name></member>
+    <member refid="classASL_1_1cla__display_1a4e18945095c92f37272e93190d41fcdf" kind="variable"><name>u8_blink_old_position</name></member>
+    <member refid="classASL_1_1cla__display_1acbc9dbd98f9e5666beab85a89360690d" kind="variable"><name>u8_blink_new_position</name></member>
+    <member refid="classASL_1_1cla__display_1a03ed6ad78837bfae237a145301d303ae" kind="variable"><name>u8_blink_state</name></member>
+    <member refid="classASL_1_1cla__display_1ab1395c2de051abaf8e1417ab361307f1" kind="function"><name>cla_display</name></member>
+    <member refid="classASL_1_1cla__display_1aa8c679926f3e7e0404df7565ff82221e" kind="function"><name>Set_Colors</name></member>
+    <member refid="classASL_1_1cla__display_1a11d03056498516718e0809d4e945d921" kind="function"><name>Begin</name></member>
+    <member refid="classASL_1_1cla__display_1a9f7846cf922c88faa1634826575e76b2" kind="function"><name>Display_Track</name></member>
+    <member refid="classASL_1_1cla__display_1aeab85412bd2af19469aacac7e6822e2a" kind="function"><name>Display_Players</name></member>
+    <member refid="classASL_1_1cla__display_1a901637d104dfd90bb2b8bc56576e0dc8" kind="function"><name>Display_Restore</name></member>
+    <member refid="classASL_1_1cla__display_1a2cac763982a77f2da5ce5698967b1eaa" kind="function"><name>Display_Current_Player</name></member>
+    <member refid="classASL_1_1cla__display_1a989197689b1e78742197093ac1ea4d8c" kind="function"><name>Display_Progress</name></member>
+    <member refid="classASL_1_1cla__display_1ad6fd1aced2e7aa0087d6181ccc26076a" kind="function"><name>Display_Char</name></member>
+    <member refid="classASL_1_1cla__display_1ace499a0bfb8eb1a963ac7cafa2fdd119" kind="function"><name>Display_Clear_Right</name></member>
+    <member refid="classASL_1_1cla__display_1ad711e5fe23bfbbf3bef0d0521a50689b" kind="function"><name>Blink_Start</name></member>
+    <member refid="classASL_1_1cla__display_1ac552462eed7ef7c916d6a3f228241a99" kind="function"><name>Blink_Update</name></member>
+    <member refid="classASL_1_1cla__display_1a7cbc5aa0a494b26b4268428d49d1a20a" kind="function"><name>Blink_Stop</name></member>
+    <member refid="classASL_1_1cla__display_1ae19c6959d272e61b6a51dfefaae432b3" kind="function"><name>Blink_Is_On</name></member>
+    <member refid="classASL_1_1cla__display_1a15fce20f657570aeef685051938c16e5" kind="function"><name>Modify_Position</name></member>
+    <member refid="classASL_1_1cla__display_1a7cf564eb2edb857e9ed46eec4017fff0" kind="function"><name>Move_Token</name></member>
+    <member refid="classASL_1_1cla__display_1ae6a1829713a38d0dc9a290dd832effd4" kind="function"><name>Display_Dice</name></member>
+  </compound>
+  <compound refid="classLOGIC_1_1cla__manual__player" kind="class"><name>LOGIC::cla_manual_player</name>
+    <member refid="classLOGIC_1_1cla__manual__player_1aadfdca090d871dd059a2dbec57d8fcb3" kind="function"><name>cla_manual_player</name></member>
+    <member refid="classLOGIC_1_1cla__manual__player_1aa959494f63541415a95b9a72040a9e3c" kind="function"><name>Is_Computer</name></member>
+  </compound>
+  <compound refid="classLOGIC_1_1cla__player" kind="class"><name>LOGIC::cla_player</name>
+    <member refid="classLOGIC_1_1cla__player_1a7dc2813d75bd9f8d4932bc553089c91b" kind="variable"><name>u8_start_position</name></member>
+    <member refid="classLOGIC_1_1cla__player_1ac6bb95fd9891b1d9d131a35112dd5c7e" kind="variable"><name>u8_token_position</name></member>
+    <member refid="classLOGIC_1_1cla__player_1ae246e769b12eba6c8716d16e032a109a" kind="variable"><name>u8_player_id</name></member>
+    <member refid="classLOGIC_1_1cla__player_1aac546958e8055055c5e0c574ddfcefdc" kind="variable"><name>obj_my_session</name></member>
+    <member refid="classLOGIC_1_1cla__player_1ae50a20169ea2277cd55998eb92428f06" kind="function"><name>cla_player</name></member>
+    <member refid="classLOGIC_1_1cla__player_1a282fd5e0969fac08058069e87d7a3862" kind="function"><name>Calculate_Possible_Position</name></member>
+    <member refid="classLOGIC_1_1cla__player_1a53374f47a37c2efa0c591ff30a1ad0cc" kind="function"><name>Move_Token</name></member>
+    <member refid="classLOGIC_1_1cla__player_1ac5019340cd2420422b751c6da790c432" kind="function"><name>Is_Start_Field_Occupied_By_Own_Token</name></member>
+    <member refid="classLOGIC_1_1cla__player_1aabf38e935588dae1a3f317165b8e59ce" kind="function"><name>Get_Token_Position</name></member>
+    <member refid="classLOGIC_1_1cla__player_1a83b1cea613c6c0c495ea586bfaf07a69" kind="function"><name>Set_Token_Position</name></member>
+    <member refid="classLOGIC_1_1cla__player_1a66ec5e5be3edfaa5427f844fbf48b0b2" kind="function"><name>Get_Token_Progress</name></member>
+    <member refid="classLOGIC_1_1cla__player_1ab5b9a21565141948deec8c3054617cbd" kind="function"><name>Get_Player_Status</name></member>
+    <member refid="classLOGIC_1_1cla__player_1a36242f4593e02368371f34d84dd8ac45" kind="function"><name>Get_Player_Progress</name></member>
+    <member refid="classLOGIC_1_1cla__player_1a5f7af12ee434a5e52f9f6b915f4eff26" kind="function"><name>Is_Computer</name></member>
+    <member refid="classLOGIC_1_1cla__player_1ab5c4546ebf8e4665210452c5497bb91e" kind="function"><name>Get_Start_Position</name></member>
+    <member refid="classLOGIC_1_1cla__player_1ab7f32fcee2004a688a1460113f85c96a" kind="function"><name>Auto_Move</name></member>
+  </compound>
+  <compound refid="classLOGIC_1_1cla__session" kind="class"><name>LOGIC::cla_session</name>
+    <member refid="classLOGIC_1_1cla__session_1a9d49627f1f54693a09ccd596f712c906" kind="variable"><name>array_players</name></member>
+    <member refid="classLOGIC_1_1cla__session_1abb7a7766af30dc205a622bf2e561b05a" kind="variable"><name>u8_is_occupied_player_id</name></member>
+    <member refid="classLOGIC_1_1cla__session_1a46b5358192e433995fc5eeda35504fe4" kind="variable"><name>u8_is_occupied_token_number</name></member>
+    <member refid="classLOGIC_1_1cla__session_1a4fac07fd074432e96048945e9d0832c4" kind="variable"><name>u8_player_quantity</name></member>
+    <member refid="classLOGIC_1_1cla__session_1afb5b948de1322a585524326be9b3f56b" kind="variable"><name>u8_computer_quantity</name></member>
+    <member refid="classLOGIC_1_1cla__session_1ab6c6a55bd57bcfaba726fd9c2dd3fd37" kind="function"><name>cla_session</name></member>
+    <member refid="classLOGIC_1_1cla__session_1a648aca267cce6fb4e1cb3153095f7c6e" kind="function"><name>Is_Occupied</name></member>
+    <member refid="classLOGIC_1_1cla__session_1ade13b4609f27a40e107f00bbdd080a54" kind="function"><name>Return_Home</name></member>
+    <member refid="classLOGIC_1_1cla__session_1a42b01279aeb55ee3c7e131077faff20e" kind="function"><name>Get_Player_Quantity</name></member>
+    <member refid="classLOGIC_1_1cla__session_1a6745ea09eacc52f0413009d0cdc67862" kind="function"><name>Get_Computer_Quantity</name></member>
+  </compound>
+  <compound refid="namespaceASL" kind="namespace"><name>ASL</name>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321" kind="enum"><name>en_state</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321aa05880976745ed8796dce962342b89af" kind="enumvalue"><name>display_setup_real_players</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a635634ecbc399c457e3935d21ff96faa" kind="enumvalue"><name>setup_real_players</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a4e44609e12d3be86d274aaa62e1d34fa" kind="enumvalue"><name>modify_real_player_number</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a07d414ffac248cd93d816544bd029bae" kind="enumvalue"><name>display_setup_computer_players</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a068ad918d13bdd713a2c0afe650c9ffb" kind="enumvalue"><name>setup_computer_players</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a286e72b1fd31dffa5f217b96be65dc96" kind="enumvalue"><name>modify_computer_player_number</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a664fa0b8e1413180f06dd6022469d51d" kind="enumvalue"><name>display_setup_computer_player_mode</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a3727ee72afac15cdc82a370c1ad67f91" kind="enumvalue"><name>setup_computer_player_mode</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321ae0b223f4bcdc8fe2331d560759a262fc" kind="enumvalue"><name>modify_computer_player_mode</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a062369698b1175290ac47a48a5065d65" kind="enumvalue"><name>init_game_logic</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321ae56c421efacc15985e3d13db35550332" kind="enumvalue"><name>wait_for_dice_roll</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321afdea69414262fb6a64db035c700b1729" kind="enumvalue"><name>roll_the_dice</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321ac5074612f0ac4068625d19576523d4da" kind="enumvalue"><name>wait_for_player_input</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321ae71527938c1153245d3b3d0fc7250027" kind="enumvalue"><name>display_token</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a0d509cee64fe0971fc4b66274cae7618" kind="enumvalue"><name>validate_token</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a27ed25e86a221c7dfbd89dd27d9adf3f" kind="enumvalue"><name>move_token</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321ace33cf838f3db35ae1d592b82d3dd7d5" kind="enumvalue"><name>next_player</name></member>
+    <member refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321a0e0523f1532e8a4dba6254585423d2f1" kind="enumvalue"><name>game_finished</name></member>
+    <member refid="ASL_8hpp_1a2f08c35c7604cd9519b8a987a5a98ad3" kind="enum"><name>en_blink_mode</name></member>
+    <member refid="ASL_8hpp_1a2f08c35c7604cd9519b8a987a5a98ad3a9ee135c7b1321f309a2a2b6444ebaaf3" kind="enumvalue"><name>off</name></member>
+    <member refid="ASL_8hpp_1a2f08c35c7604cd9519b8a987a5a98ad3a54fc0c72713eccd0de28d2359c2df263" kind="enumvalue"><name>fast</name></member>
+    <member refid="ASL_8hpp_1a2f08c35c7604cd9519b8a987a5a98ad3a2113379ba6f87033c6d25674040c96c1" kind="enumvalue"><name>slow</name></member>
+    <member refid="ASL_8hpp_1adeed25a7e25bd3ec5f224cec4bc9f772" kind="enum"><name>en_blink_type</name></member>
+    <member refid="ASL_8hpp_1adeed25a7e25bd3ec5f224cec4bc9f772ada23497ae2f6518779d369ec48b13bfd" kind="enumvalue"><name>token</name></member>
+    <member refid="ASL_8hpp_1adeed25a7e25bd3ec5f224cec4bc9f772af6270b014a04d415b5a8aa82d068e7c8" kind="enumvalue"><name>token_thrown</name></member>
+    <member refid="ASL_8hpp_1adeed25a7e25bd3ec5f224cec4bc9f772af0a032a430fe4fb21920dc04b992048d" kind="enumvalue"><name>starting_square</name></member>
+    <member refid="ASL_8hpp_1adeed25a7e25bd3ec5f224cec4bc9f772afacec37712b7eda7e8455045741e4777" kind="enumvalue"><name>winner_animation</name></member>
+    <member refid="ASL_8hpp_1aebdc20185c3fc61180b6ad4f3a37dbf9" kind="function"><name>Setup_Buttons</name></member>
+    <member refid="ASL_8hpp_1adfa0cf539e110937f4252a478a58f03c" kind="function"><name>Setup_Dice</name></member>
+    <member refid="ASL_8hpp_1a7934fe680f0a7806fbfc5dcbcf15c659" kind="function"><name>Roll_Dice</name></member>
+    <member refid="ASL_8hpp_1acf7c2599fd5c999d438922363ba8cf7e" kind="function"><name>Delay_256</name></member>
+  </compound>
+  <compound refid="namespaceLOGIC" kind="namespace"><name>LOGIC</name>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6" kind="enum"><name>status</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6a5ebb8b832ba328bd51ef5d556f4a938f" kind="enumvalue"><name>Start</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6a415c6ddf8b5a0d4538cbc518252b6b52" kind="enumvalue"><name>Start_Track</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ae9c281be3b3742924c3c47b255e7f79e" kind="enumvalue"><name>Start_Finished</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ae6ca6c715925995d00ad6824d91665d6" kind="enumvalue"><name>Start_Track_Finished</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ac42ba10018503fded138601bd50ba8dc" kind="enumvalue"><name>Error</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6acb974776ea44dc1e3d112ffb9c7f0386" kind="enumvalue"><name>Track</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6afb54686db70004b8c7973b4f490abb20" kind="enumvalue"><name>Finished</name></member>
+    <member refid="logic_8hpp_1aebfecc7615010d2ca87e7ac9d9df43e6ad3e7aea9c485ce66c627edf0221a16ed" kind="enumvalue"><name>Track_Finished</name></member>
+    <member refid="logic_8hpp_1a8c1decbe2bb0ec585d5c15608f34b8d1" kind="enum"><name>mode</name></member>
+    <member refid="logic_8hpp_1a8c1decbe2bb0ec585d5c15608f34b8d1a13a4ecadc5b54cec431b57d2eb6a9611" kind="enumvalue"><name>Student</name></member>
+    <member refid="logic_8hpp_1a8c1decbe2bb0ec585d5c15608f34b8d1aac30a805d18ec48cb11ddc5b0009b609" kind="enumvalue"><name>Professor</name></member>
+  </compound>
+  <compound refid="001-TestCase__Requirements_8cpp" kind="file"><name>001-TestCase_Requirements.cpp</name>
+    <member refid="001-TestCase__Requirements_8cpp_1a0f80a8d14f61f11f7f48b186952eb594" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1afae2ccebc3ff4d9e59a8ce842b84f826" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1a189ac5eb474843750a5db4fa3d5e75f6" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1ac1865b0893377b332d73015b1b866905" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1acc1baac450f13d04d7e157b1ea5b600e" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1a7f591aac88c423de81d2a006fad2ccbb" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1ab713e7614bd10cb523d5b50ac69edd11" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1a06ac3a7123f0752cc5439c86ca17eb9d" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1a783ff98d15c96f583a32460cfece721f" kind="function"><name>TEST_CASE</name></member>
+    <member refid="001-TestCase__Requirements_8cpp_1a0176a08d53e91dfd5d50cdd308665341" kind="function"><name>TEST_CASE</name></member>
+  </compound>
+  <compound refid="002-TestCase__ComputerPlayer_8cpp" kind="file"><name>002-TestCase_ComputerPlayer.cpp</name>
+    <member refid="002-TestCase__ComputerPlayer_8cpp_1ae9712200eee50a3ebfb170eb56709881" kind="function"><name>TEST_CASE</name></member>
+    <member refid="002-TestCase__ComputerPlayer_8cpp_1a291f4a5df94360d144ea784f0ecc0d2b" kind="function"><name>TEST_CASE</name></member>
+    <member refid="002-TestCase__ComputerPlayer_8cpp_1ada5f4f0957ef802d3e235b0b1114e78a" kind="function"><name>TEST_CASE</name></member>
+    <member refid="002-TestCase__ComputerPlayer_8cpp_1a26319846dd9b341a797bc6f0898afb8c" kind="function"><name>TEST_CASE</name></member>
+    <member refid="002-TestCase__ComputerPlayer_8cpp_1a6a31253d5c74dc065a85108de3108fd5" kind="function"><name>TEST_CASE</name></member>
+    <member refid="002-TestCase__ComputerPlayer_8cpp_1a25e3ac868c0a166289312a32b696941b" kind="function"><name>TEST_CASE</name></member>
+    <member refid="002-TestCase__ComputerPlayer_8cpp_1a1e0e0c9dce5d971e0a8adc70fddfd10d" kind="function"><name>TEST_CASE</name></member>
+  </compound>
+  <compound refid="003-TestCase__Session__and__Player_8cpp" kind="file"><name>003-TestCase_Session_and_Player.cpp</name>
+    <member refid="003-TestCase__Session__and__Player_8cpp_1a21ce3c366e218c8724caf5bf07485bef" kind="function"><name>TEST_CASE</name></member>
+    <member refid="003-TestCase__Session__and__Player_8cpp_1a75a6ccb1554f1ffd87c2bca3856a1051" kind="function"><name>TEST_CASE</name></member>
+    <member refid="003-TestCase__Session__and__Player_8cpp_1ac09c404b7218bc1c8064ebb366f1bd01" kind="function"><name>TEST_CASE</name></member>
+    <member refid="003-TestCase__Session__and__Player_8cpp_1a7924847a0fe230f0cb81b9314a5e7853" kind="function"><name>TEST_CASE</name></member>
+    <member refid="003-TestCase__Session__and__Player_8cpp_1a2c7337d493bf1c98fb9fc8d189d7b7d1" kind="function"><name>TEST_CASE</name></member>
+    <member refid="003-TestCase__Session__and__Player_8cpp_1ae50bda1bcfddb7ffabf4cf093e763f89" kind="function"><name>TEST_CASE</name></member>
+  </compound>
+  <compound refid="animations_8cpp" kind="file"><name>animations.cpp</name>
+    <member refid="animations_8cpp_1a1df6bd274744026e35a047543c9eb523" kind="define"><name>ANIMATIONS</name></member>
+    <member refid="animations_8cpp_1a15cb51f68261b3c6afa20c9653f7ebfd" kind="function"><name>Move_Token</name></member>
+  </compound>
+  <compound refid="ASL_8cpp" kind="file"><name>ASL.cpp</name>
+  </compound>
+  <compound refid="ASL_8hpp" kind="file"><name>ASL.hpp</name>
+  </compound>
+  <compound refid="defines_8hpp" kind="file"><name>defines.hpp</name>
+    <member refid="defines_8hpp_1a4b355291fe6b8ba8e167ab0faa862e45" kind="define"><name>CLK</name></member>
+    <member refid="defines_8hpp_1a2e810d3371ba1d3a5febbf62d1d2b54e" kind="define"><name>LAT</name></member>
+    <member refid="defines_8hpp_1a7122a6e5d75b5f8b7f00c7130df40407" kind="define"><name>OE</name></member>
+    <member refid="defines_8hpp_1a955f504eccf76b4eb2489c0adab03121" kind="define"><name>A</name></member>
+    <member refid="defines_8hpp_1a111da81ae5883147168bbb8366377b10" kind="define"><name>B</name></member>
+    <member refid="defines_8hpp_1ac4cf4b2ab929bd23951a8676eeac086b" kind="define"><name>C</name></member>
+    <member refid="defines_8hpp_1a030044446ef99edf19d712dd02e07d29" kind="define"><name>RED_BRIGHT</name></member>
+    <member refid="defines_8hpp_1a58bfaba1556f1841476fedff17254b5a" kind="define"><name>RED_DARK</name></member>
+    <member refid="defines_8hpp_1af064c69415080cd67906ee36f0392b30" kind="define"><name>GREEN_BRIGHT</name></member>
+    <member refid="defines_8hpp_1a4d1645ca68586c80bbe215ad4c6fde7f" kind="define"><name>GREEN_DARK</name></member>
+    <member refid="defines_8hpp_1a70a158c4ff54c26c1912843f5aab8624" kind="define"><name>YELLOW_BRIGHT</name></member>
+    <member refid="defines_8hpp_1a389f68f8ae974ed911c9ab4d9d0a22fc" kind="define"><name>YELLOW_DARK</name></member>
+    <member refid="defines_8hpp_1adbeec8dfd8f20921db33839f0021b944" kind="define"><name>BLUE_BRIGHT</name></member>
+    <member refid="defines_8hpp_1a036a9d4c81a79b304c507f1f42ab571b" kind="define"><name>BLUE_DARK</name></member>
+    <member refid="defines_8hpp_1ae8265b6fece238847c4d2303913450cc" kind="define"><name>WHITE_BRIGHT</name></member>
+    <member refid="defines_8hpp_1a00aef9e8dd001a49f8717031d84b2c6c" kind="define"><name>DEBOUNCE_TIME</name></member>
+    <member refid="defines_8hpp_1ade65acac06eb242d02d71648b41b27f6" kind="define"><name>FAST_BLINK</name></member>
+    <member refid="defines_8hpp_1ad2f2358ce2a0e5765d5eb1087633a7e6" kind="define"><name>SLOW_BLINK</name></member>
+    <member refid="defines_8hpp_1a581126c4697dacc2d771f815689ff1dc" kind="define"><name>ANIMATION_SPEED_COMPUTER</name></member>
+    <member refid="defines_8hpp_1a9cf5079f41e34526d9f357faae5ae770" kind="define"><name>ANIMATION_SPEED_DICE</name></member>
+    <member refid="defines_8hpp_1adb51dcf7f0a4d5a347f02a13baebfd60" kind="define"><name>ANIMATION_SPEED_MOVE</name></member>
+    <member refid="defines_8hpp_1a78ea32b28f4b4e64a96c2bfabdd06401" kind="define"><name>BLINK_CYCLES_TOKEN</name></member>
+    <member refid="defines_8hpp_1aa9dc0161af0f3a65e827e51e0d516434" kind="define"><name>BLINK_CYCLES_OCCUPIED_TOKEN</name></member>
+    <member refid="defines_8hpp_1a586b05193c0ab507c6a53ea0bffa3035" kind="define"><name>BLINK_CYCLES_WINNER_ANIMATION</name></member>
+    <member refid="defines_8hpp_1af8cbea1a9f7441f90ca5ffabecfae7f7" kind="define"><name>INITIAL_DICE_VALUE</name></member>
+    <member refid="defines_8hpp_1a08bdda08308843606ce7073b4c496324" kind="define"><name>INITIAL_DICE_ROLL_COUNTER</name></member>
+    <member refid="defines_8hpp_1a2ebff229b864e64356948da0c248ba67" kind="define"><name>INITIAL_COMPUTER_MODE</name></member>
+    <member refid="defines_8hpp_1aa26ee8d242bc7c5d6c7879d8fe826d99" kind="define"><name>INITIAL_PLAYER_QUANTITY</name></member>
+    <member refid="defines_8hpp_1a5bb2c972a19a12e6b9991b69f8d6e03a" kind="define"><name>INITIAL_COMPUTER_QUANTITY</name></member>
+    <member refid="defines_8hpp_1ad3acff693d4ec1046e9313399ed63e4c" kind="define"><name>INITIAL_CURRENT_PLAYER_NUMBER</name></member>
+    <member refid="defines_8hpp_1a973d12adbd1afe1a653315d3856083b5" kind="define"><name>INITIAL_CURRENT_TOKEN_NUMBER</name></member>
+    <member refid="defines_8hpp_1a7ecf5a3328db5bc3398e436bdb47b197" kind="define"><name>INITIAL_BOOL_BLINK_FLAG</name></member>
+    <member refid="defines_8hpp_1ac04c6072bc4df192299a07a5bba3a11d" kind="define"><name>DICE_ROLLS_AT_START</name></member>
+    <member refid="defines_8hpp_1a2942c95fcae6946f6a14c636efc9595b" kind="define"><name>DICE_ROLLS_NORMAL</name></member>
+    <member refid="defines_8hpp_1aaf90e4c47a9870f13507b587c114f5d2" kind="define"><name>DICE_ROLLS_AT_SIX</name></member>
+    <member refid="defines_8hpp_1ad72dbcf6d0153db1b8d8a58001feed83" kind="define"><name>DEBUG</name></member>
+    <member refid="defines_8hpp_1aebc5d9ca2618b144c2a85ca2fc82bdbf" kind="define"><name>TIMING_DEBUG</name></member>
+    <member refid="defines_8hpp_1a20b972c0abe4de1f777322e0bac5e759" kind="define"><name>TIMING_DEBUG_INTERN</name></member>
+    <member refid="defines_8hpp_1ada3b258c03a8d5e8126be5bd1c4b8364" kind="define"><name>TIMING_DEBUG_COUNT_TO</name></member>
+    <member refid="defines_8hpp_1a758b3653b209ce4ad5cef3b38a82796d" kind="define"><name>DICE_MODE</name></member>
+  </compound>
+  <compound refid="interupt_8cpp" kind="file"><name>interupt.cpp</name>
+    <member refid="interupt_8cpp_1ae5963d654c7e6969242cd61509436f6d" kind="variable"><name>en_current_state</name></member>
+    <member refid="interupt_8cpp_1a295e80116833f46da705e052a994f33e" kind="variable"><name>u8_player_quantity</name></member>
+    <member refid="interupt_8cpp_1a17319942ee9bb76936e44151493fe990" kind="variable"><name>u8_computer_quantity</name></member>
+    <member refid="interupt_8cpp_1a727f4a25924793cb200538a7ae0267df" kind="variable"><name>i8_current_token_number</name></member>
+    <member refid="interupt_8cpp_1afce2cf08c040319194ef332440c5f458" kind="variable"><name>obj_display</name></member>
+    <member refid="interupt_8cpp_1ae9b10472c1c507b99c18c3a59238ba74" kind="variable"><name>bool_blink_flag</name></member>
+    <member refid="interupt_8cpp_1a98a290ada01eb27fd2ff4564371566e5" kind="function"><name>ISR</name></member>
+    <member refid="interupt_8cpp_1a6225c50fbafa01589351ed487223aacb" kind="function"><name>ISR</name></member>
+    <member refid="interupt_8cpp_1a86953738188622410b88938da2bf8a63" kind="function"><name>ISR</name></member>
+    <member refid="interupt_8cpp_1a8aa6a32130ab26be17555166513a23ba" kind="function"><name>ISR</name></member>
+    <member refid="interupt_8cpp_1a332352d7fb4b7b02401910478cec92fa" kind="function"><name>ISR</name></member>
+  </compound>
+  <compound refid="logic_8cpp" kind="file"><name>logic.cpp</name>
+  </compound>
+  <compound refid="logic_8hpp" kind="file"><name>logic.hpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae5963d654c7e6969242cd61509436f6d" kind="variable"><name>en_current_state</name></member>
+    <member refid="main_8cpp_1a295e80116833f46da705e052a994f33e" kind="variable"><name>u8_player_quantity</name></member>
+    <member refid="main_8cpp_1a17319942ee9bb76936e44151493fe990" kind="variable"><name>u8_computer_quantity</name></member>
+    <member refid="main_8cpp_1ae91e255abdf3b5234d0ef0056824a9ec" kind="variable"><name>i8_current_player_number</name></member>
+    <member refid="main_8cpp_1a727f4a25924793cb200538a7ae0267df" kind="variable"><name>i8_current_token_number</name></member>
+    <member refid="main_8cpp_1a516408f52a00d6ac6ebd20bbf28197e5" kind="variable"><name>obj_session</name></member>
+    <member refid="main_8cpp_1a2d487c752b286323295377289562c665" kind="variable"><name>obj_display</name></member>
+    <member refid="main_8cpp_1ae9b10472c1c507b99c18c3a59238ba74" kind="variable"><name>bool_blink_flag</name></member>
+    <member refid="main_8cpp_1a15cb51f68261b3c6afa20c9653f7ebfd" kind="function"><name>Move_Token</name></member>
+    <member refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
+    <member refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
+  </compound>
+  <compound refid="marked__dice_8hpp" kind="file"><name>marked_dice.hpp</name>
+    <member refid="marked__dice_8hpp_1a5ab5b9aaf3850b085ca39abf901b2751" kind="define"><name>TEST_CASE</name></member>
+    <member refid="marked__dice_8hpp_1aaa8ea6d9cc6ada8bef38434891462b2d" kind="variable"><name>u8_dice_value_array</name></member>
+  </compound>
+  <compound refid="dir_9d6c7046ff27a423104698a469533c50" kind="dir"><name>ASL</name>
+  </compound>
+  <compound refid="dir_e46236678326602fb51a33a9a20e1fb4" kind="dir"><name>COD_ENG_OUT_arduino_code</name>
+  </compound>
+  <compound refid="dir_6774b76becf5c1eba00b38f86dafd5a0" kind="dir"><name>Engineering</name>
+  </compound>
+  <compound refid="dir_a4eb90df38054bf38c8301b489299593" kind="dir"><name>Game_Logic</name>
+  </compound>
+  <compound refid="dir_32fda5728acd4db3cc42f60aad9a9fcc" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_4020720c6a555fbd5bcbb296f9427588" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_38410eb1dec6281e0e0807d9e6ad57cf" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_02c5495a4fec5d88110fd511c5e276ee" kind="dir"><name>test</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classLOGIC_1_1cla__session" kind="class" language="C++" prot="public">
+    <compoundname>LOGIC::cla_session</compoundname>
+    <includes refid="logic_8hpp" local="no">logic.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classLOGIC_1_1cla__session_1a9d49627f1f54693a09ccd596f712c906" prot="public" static="no" mutable="no">
+        <type><ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref> *</type>
+        <definition>cla_player* LOGIC::cla_session::array_players[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>array_players</name>
+        <briefdescription>
+<para>Array of pointers to the players. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="66" column="14" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOGIC_1_1cla__session_1abb7a7766af30dc205a622bf2e561b05a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_session::u8_is_occupied_player_id</definition>
+        <argsstring></argsstring>
+        <name>u8_is_occupied_player_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The ID of the player at the occupied track position. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="92" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOGIC_1_1cla__session_1a46b5358192e433995fc5eeda35504fe4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_session::u8_is_occupied_token_number</definition>
+        <argsstring></argsstring>
+        <name>u8_is_occupied_token_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The token number at the occupied track position. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="94" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLOGIC_1_1cla__session_1a4fac07fd074432e96048945e9d0832c4" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_session::u8_player_quantity</definition>
+        <argsstring></argsstring>
+        <name>u8_player_quantity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of all players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="98" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOGIC_1_1cla__session_1afb5b948de1322a585524326be9b3f56b" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_session::u8_computer_quantity</definition>
+        <argsstring></argsstring>
+        <name>u8_computer_quantity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of computer-controlled players. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="99" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLOGIC_1_1cla__session_1ab6c6a55bd57bcfaba726fd9c2dd3fd37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOGIC::cla_session::cla_session</definition>
+        <argsstring>(uint8_t _u8_player_quantity, uint8_t _u8_computer_quantity, mode _en_mode)</argsstring>
+        <name>cla_session</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_quantity</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_computer_quantity</declname>
+        </param>
+        <param>
+          <type>mode</type>
+          <declname>_en_mode</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_player_quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of all players. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_computer_quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of computer-controlled players. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="63" column="3" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="21" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__session_1a648aca267cce6fb4e1cb3153095f7c6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LOGIC::cla_session::Is_Occupied</definition>
+        <argsstring>(uint8_t &amp;_u8_is_occupied_player_id, uint8_t &amp;_u8_is_occupied_token_number, uint8_t _u8_affected_track_position)</argsstring>
+        <name>Is_Occupied</name>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>_u8_is_occupied_player_id</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>_u8_is_occupied_token_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_affected_track_position</declname>
+        </param>
+        <briefdescription>
+<para>Checks if the position on the map is occupied. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;u8_is_occupied_player_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to variable to store the player ID of the occupied track position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;u8_is_occupied_token_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to variable to store the token number of the occupied track position. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_affected_track_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The track position to check. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if occupied, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="77" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="71" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__session_1ade13b4609f27a40e107f00bbdd080a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool LOGIC::cla_session::Return_Home</definition>
+        <argsstring>(uint8_t _u8_affected_track_position)</argsstring>
+        <name>Return_Home</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_affected_track_position</declname>
+        </param>
+        <briefdescription>
+<para>Returns a token to its home position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_affected_track_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The affected track position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the token is successfully returned home, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="86" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="94" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__session_1a42b01279aeb55ee3c7e131077faff20e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_session::Get_Player_Quantity</definition>
+        <argsstring>()</argsstring>
+        <name>Get_Player_Quantity</name>
+        <briefdescription>
+<para>Returns the number of players. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="88" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="403" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__session_1a6745ea09eacc52f0413009d0cdc67862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_session::Get_Computer_Quantity</definition>
+        <argsstring>()</argsstring>
+        <name>Get_Computer_Quantity</name>
+        <briefdescription>
+<para>Returns the number of computer players. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="90" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="405" bodyend="405"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref> class is the main class of the game logic. It initializes the players with their methods and it provides essential methods for the game logic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>LOGIC::cla_player</label>
+        <link refid="classLOGIC_1_1cla__player"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>obj_my_session</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LOGIC::cla_session</label>
+        <link refid="classLOGIC_1_1cla__session"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>array_players</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="56" column="1" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="56" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classLOGIC_1_1cla__session_1a9d49627f1f54693a09ccd596f712c906" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>array_players</name></member>
+      <member refid="classLOGIC_1_1cla__session_1ab6c6a55bd57bcfaba726fd9c2dd3fd37" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>cla_session</name></member>
+      <member refid="classLOGIC_1_1cla__session_1a6745ea09eacc52f0413009d0cdc67862" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>Get_Computer_Quantity</name></member>
+      <member refid="classLOGIC_1_1cla__session_1a42b01279aeb55ee3c7e131077faff20e" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>Get_Player_Quantity</name></member>
+      <member refid="classLOGIC_1_1cla__session_1a648aca267cce6fb4e1cb3153095f7c6e" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>Is_Occupied</name></member>
+      <member refid="classLOGIC_1_1cla__session_1ade13b4609f27a40e107f00bbdd080a54" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>Return_Home</name></member>
+      <member refid="classLOGIC_1_1cla__session_1afb5b948de1322a585524326be9b3f56b" prot="private" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>u8_computer_quantity</name></member>
+      <member refid="classLOGIC_1_1cla__session_1abb7a7766af30dc205a622bf2e561b05a" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>u8_is_occupied_player_id</name></member>
+      <member refid="classLOGIC_1_1cla__session_1a46b5358192e433995fc5eeda35504fe4" prot="public" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>u8_is_occupied_token_number</name></member>
+      <member refid="classLOGIC_1_1cla__session_1a4fac07fd074432e96048945e9d0832c4" prot="private" virt="non-virtual"><scope>LOGIC::cla_session</scope><name>u8_player_quantity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

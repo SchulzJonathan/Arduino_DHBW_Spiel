@@ -1,0 +1,487 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classLOGIC_1_1cla__player" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>LOGIC::cla_player</compoundname>
+    <derivedcompoundref refid="classLOGIC_1_1cla__computer__player" prot="public" virt="non-virtual">LOGIC::cla_computer_player</derivedcompoundref>
+    <derivedcompoundref refid="classLOGIC_1_1cla__manual__player" prot="public" virt="non-virtual">LOGIC::cla_manual_player</derivedcompoundref>
+    <includes refid="logic_8hpp" local="no">logic.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classLOGIC_1_1cla__player_1a7dc2813d75bd9f8d4932bc553089c91b" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::u8_start_position</definition>
+        <argsstring></argsstring>
+        <name>u8_start_position</name>
+        <briefdescription>
+<para>The starting position of the player. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="192" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOGIC_1_1cla__player_1ac6bb95fd9891b1d9d131a35112dd5c7e" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::u8_token_position[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>u8_token_position</name>
+        <briefdescription>
+<para>The positions of the player&apos;s four tokens. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="193" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOGIC_1_1cla__player_1ae246e769b12eba6c8716d16e032a109a" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::u8_player_id</definition>
+        <argsstring></argsstring>
+        <name>u8_player_id</name>
+        <briefdescription>
+<para>The id of the player. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="194" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLOGIC_1_1cla__player_1aac546958e8055055c5e0c574ddfcefdc" prot="protected" static="no" mutable="no">
+        <type><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref> *</type>
+        <definition>cla_session* LOGIC::cla_player::obj_my_session</definition>
+        <argsstring></argsstring>
+        <name>obj_my_session</name>
+        <briefdescription>
+<para>Pointer to the associated session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="195" column="15" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1ae50a20169ea2277cd55998eb92428f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOGIC::cla_player::cla_player</definition>
+        <argsstring>(uint8_t _u8_player_id, uint8_t _u8_start_position, uint8_t _u8_computer_quantity, cla_session *_obj_my_session)</argsstring>
+        <name>cla_player</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_start_position</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_computer_quantity</declname>
+        </param>
+        <param>
+          <type><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref> *</type>
+          <declname>_obj_my_session</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_player_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_start_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The individual starting position of the player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_computer_quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of computer controlled players. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_obj_my_session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the associated session. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="117" column="3" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="42" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1a282fd5e0969fac08058069e87d7a3862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::Calculate_Possible_Position</definition>
+        <argsstring>(uint8_t _u8_token_number, uint8_t _u8_dice_value)</argsstring>
+        <name>Calculate_Possible_Position</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_token_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_dice_value</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the possible position of a token. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_token_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_dice_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the rolled dice. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The calculated position of the token. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="126" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="108" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1a53374f47a37c2efa0c591ff30a1ad0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::Move_Token</definition>
+        <argsstring>(uint8_t _u8_token_number, uint8_t _u8_dice_value)</argsstring>
+        <name>Move_Token</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_token_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_dice_value</declname>
+        </param>
+        <briefdescription>
+<para>Moves a token on the track. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_token_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_dice_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the rolled dice. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new position of the token. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="135" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="167" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1ac5019340cd2420422b751c6da790c432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int8_t</type>
+        <definition>int8_t LOGIC::cla_player::Is_Start_Field_Occupied_By_Own_Token</definition>
+        <argsstring>()</argsstring>
+        <name>Is_Start_Field_Occupied_By_Own_Token</name>
+        <briefdescription>
+<para>Checks if the starting square is occupied by own token while other tokens are home. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The token number that must be moved </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="142" column="10" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="196" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1aabf38e935588dae1a3f317165b8e59ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::Get_Token_Position</definition>
+        <argsstring>(uint8_t _u8_token_number)</argsstring>
+        <name>Get_Token_Position</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_token_number</declname>
+        </param>
+        <briefdescription>
+<para>Returns the current position of a token. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_token_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current position of the token. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="149" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="216" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1a83b1cea613c6c0c495ea586bfaf07a69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::Set_Token_Position</definition>
+        <argsstring>(uint8_t _u8_token_number, uint8_t _u8_new_position)</argsstring>
+        <name>Set_Token_Position</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_token_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_new_position</declname>
+        </param>
+        <briefdescription>
+<para>Changes the position of a token. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_token_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token number. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_new_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new position of the token. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new position of the token. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="157" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="220" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1a66ec5e5be3edfaa5427f844fbf48b0b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::Get_Token_Progress</definition>
+        <argsstring>(uint8_t _u8_token_number)</argsstring>
+        <name>Get_Token_Progress</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_token_number</declname>
+        </param>
+        <briefdescription>
+<para>Returns the progress of a token on the track. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_token_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The token number. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The progress of the token on the track. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="165" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="226" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1ab5b9a21565141948deec8c3054617cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>status</type>
+        <definition>status LOGIC::cla_player::Get_Player_Status</definition>
+        <argsstring>()</argsstring>
+        <name>Get_Player_Status</name>
+        <briefdescription>
+<para>Outputs the status of player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The status of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="171" column="10" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="244" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1a36242f4593e02368371f34d84dd8ac45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::Get_Player_Progress</definition>
+        <argsstring>()</argsstring>
+        <name>Get_Player_Progress</name>
+        <briefdescription>
+<para>Returns the overall progress of the player (Value between 1-28). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The overall progress of the player on the track. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="177" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="283" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1a5f7af12ee434a5e52f9f6b915f4eff26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool LOGIC::cla_player::Is_Computer</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Is_Computer</name>
+        <reimplementedby refid="classLOGIC_1_1cla__computer__player_1a30916d96bd3812bddfc0ad4399eed67c">Is_Computer</reimplementedby>
+        <reimplementedby refid="classLOGIC_1_1cla__manual__player_1aa959494f63541415a95b9a72040a9e3c">Is_Computer</reimplementedby>
+        <briefdescription>
+<para>Checks if the player is a computer opponent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the player is a computer opponent, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="183" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1ab5c4546ebf8e4665210452c5497bb91e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LOGIC::cla_player::Get_Start_Position</definition>
+        <argsstring>()</argsstring>
+        <name>Get_Start_Position</name>
+        <briefdescription>
+<para>Returns the starting position of the player. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="186" column="3" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="407" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__player_1ab7f32fcee2004a688a1460113f85c96a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int8_t</type>
+        <definition>int8_t LOGIC::cla_player::Auto_Move</definition>
+        <argsstring>(uint8_t _u8_dice_value, bool &amp;_bool_occupied_flag, uint8_t &amp;_u8_old_position)</argsstring>
+        <name>Auto_Move</name>
+        <reimplementedby refid="classLOGIC_1_1cla__computer__player_1aa8eded142250f48bddb148faab855159">Auto_Move</reimplementedby>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_dice_value</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>_bool_occupied_flag</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>_u8_old_position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="188" column="18" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="409" bodyend="412"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents a player in the game. It provides methods for moving tokens and checking the status of the player. It is an abstract class and has two derived classes: <ref refid="classLOGIC_1_1cla__computer__player" kindref="compound">cla_computer_player</ref> and <ref refid="classLOGIC_1_1cla__manual__player" kindref="compound">cla_manual_player</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LOGIC::cla_player</label>
+        <link refid="classLOGIC_1_1cla__player"/>
+      </node>
+      <node id="3">
+        <label>LOGIC::cla_manual_player</label>
+        <link refid="classLOGIC_1_1cla__manual__player"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LOGIC::cla_computer_player</label>
+        <link refid="classLOGIC_1_1cla__computer__player"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LOGIC::cla_player</label>
+        <link refid="classLOGIC_1_1cla__player"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>obj_my_session</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LOGIC::cla_session</label>
+        <link refid="classLOGIC_1_1cla__session"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>array_players</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="108" column="1" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="108" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classLOGIC_1_1cla__player_1ab7f32fcee2004a688a1460113f85c96a" prot="public" virt="virtual"><scope>LOGIC::cla_player</scope><name>Auto_Move</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a282fd5e0969fac08058069e87d7a3862" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Calculate_Possible_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ae50a20169ea2277cd55998eb92428f06" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>cla_player</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a36242f4593e02368371f34d84dd8ac45" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Get_Player_Progress</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ab5b9a21565141948deec8c3054617cbd" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Get_Player_Status</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ab5c4546ebf8e4665210452c5497bb91e" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Get_Start_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1aabf38e935588dae1a3f317165b8e59ce" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Get_Token_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a66ec5e5be3edfaa5427f844fbf48b0b2" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Get_Token_Progress</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a5f7af12ee434a5e52f9f6b915f4eff26" prot="public" virt="pure-virtual"><scope>LOGIC::cla_player</scope><name>Is_Computer</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ac5019340cd2420422b751c6da790c432" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Is_Start_Field_Occupied_By_Own_Token</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a53374f47a37c2efa0c591ff30a1ad0cc" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Move_Token</name></member>
+      <member refid="classLOGIC_1_1cla__player_1aac546958e8055055c5e0c574ddfcefdc" prot="protected" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>obj_my_session</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a83b1cea613c6c0c495ea586bfaf07a69" prot="public" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>Set_Token_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ae246e769b12eba6c8716d16e032a109a" prot="protected" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>u8_player_id</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a7dc2813d75bd9f8d4932bc553089c91b" prot="protected" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>u8_start_position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ac6bb95fd9891b1d9d131a35112dd5c7e" prot="protected" virt="non-virtual"><scope>LOGIC::cla_player</scope><name>u8_token_position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

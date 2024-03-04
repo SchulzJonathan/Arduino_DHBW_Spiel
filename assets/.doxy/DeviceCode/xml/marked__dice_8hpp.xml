@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="marked__dice_8hpp" kind="file" language="C++">
+    <compoundname>marked_dice.hpp</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>marked_dice.hpp</label>
+        <link refid="marked__dice_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="marked__dice_8hpp_1a5ab5b9aaf3850b085ca39abf901b2751" prot="public" static="no">
+        <name>TEST_CASE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/test/marked_dice.hpp" line="13" column="9" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/test/marked_dice.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="marked__dice_8hpp_1aaa8ea6d9cc6ada8bef38434891462b2d" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t u8_dice_value_array[]</definition>
+        <argsstring>[]</argsstring>
+        <name>u8_dice_value_array</name>
+        <initializer>= {6, 40, 6, 41, 6, 42, 6, 43,
+                                       1, 1,  1, 1,  1, 1,  1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/test/marked_dice.hpp" line="28" column="15" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/test/marked_dice.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains the dice values for the test cases. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This file contains multiple arrays for different test cases. The array to be used can be selected using the TEST_CASE macro. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MARKED_DICE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MARKED_DICE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_CASE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TEST_CASE<sp/>==<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>the<sp/>Dice<sp/>roll<sp/>counter<sp/>(you<sp/>can<sp/>roll<sp/>the<sp/>dice<sp/>3<sp/>times<sp/>when<sp/>all<sp/>tokens<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>starting<sp/>square,<sp/>if<sp/>the<sp/>dice<sp/>value<sp/>is<sp/>6,<sp/>you<sp/>get<sp/>a<sp/>second<sp/>turn.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1<sp/>Real<sp/>Player,<sp/>1<sp/>Computer<sp/>Player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>6,<sp/>5,<sp/>1,<sp/>1,<sp/>6,<sp/>2,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>6,<sp/>3};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>token<sp/>blinking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1<sp/>Real<sp/>Player,<sp/>1<sp/>Computer<sp/>Player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>5,<sp/>6,<sp/>1,<sp/>6,<sp/>4,<sp/>1,<sp/>4,<sp/>1,<sp/>4,<sp/>1,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>winner<sp/>animation<sp/>(Get<sp/>Player<sp/>1<sp/>in<sp/>finishing<sp/>square<sp/>as<sp/>fast<sp/>as<sp/>possible)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1<sp/>Real<sp/>Player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>40,<sp/>6,<sp/>41,<sp/>6,<sp/>42,<sp/>6,<sp/>43,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,<sp/>1,<sp/><sp/>1,<sp/>1,<sp/><sp/>1,<sp/>1,<sp/><sp/>1};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>walking<sp/>(test<sp/>if<sp/>tokens<sp/>walk<sp/>over<sp/>each<sp/>other)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2<sp/>Real<sp/>Players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>5,<sp/>6,<sp/>1,<sp/>5,<sp/>1,<sp/>3,<sp/>3,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4,<sp/>4,<sp/>5,<sp/>4,<sp/>2,<sp/>5,<sp/>4};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>walking<sp/>(test<sp/>if<sp/>tokens<sp/>can<sp/>get<sp/>accross<sp/>44/5<sp/>line<sp/>without<sp/>problems)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>4<sp/>Real<sp/>Players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>5,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>6,<sp/>5,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>1,<sp/>7};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>walking:<sp/>New<sp/>player<sp/>dissapears</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Expected<sp/>behavior:<sp/>Player<sp/>1<sp/>should<sp/>dissapear<sp/>from<sp/>the<sp/>track,<sp/>because<sp/>he<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>thrown<sp/>by<sp/>player<sp/>2<sp/>2<sp/>Real<sp/>Players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>15,<sp/>6,<sp/>5,<sp/>0,<sp/>0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>walking:<sp/>New<sp/>player<sp/>dissapears</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Expected<sp/>behavior:<sp/>Player<sp/>1<sp/>should<sp/>dissapear<sp/>from<sp/>the<sp/>track,<sp/>because<sp/>he<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>thrown<sp/>by<sp/>player<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2<sp/>Real<sp/>Players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>5,<sp/>1,<sp/>1,<sp/>1,<sp/>5,<sp/>1,<sp/>1,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,<sp/>3,<sp/>6,<sp/>1,<sp/>1,<sp/>3,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>walking:<sp/>Player<sp/>on<sp/>position<sp/>44</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Expected<sp/>behavior:<sp/>Green<sp/>player<sp/>should<sp/>be<sp/>on<sp/>position<sp/>44.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>4<sp/>real<sp/>players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>1,<sp/>6,<sp/>1,<sp/>6,<sp/>1,<sp/>6,<sp/>9,<sp/>1,<sp/>1,<sp/>1,<sp/>1};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>walking:<sp/>finish<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Expected<sp/>behavior:<sp/>Players<sp/>should<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>4<sp/>real<sp/>players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>39,<sp/>6,<sp/>39,<sp/>6,<sp/>39,<sp/>6,<sp/>39,<sp/>1,<sp/>1,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,<sp/>1,<sp/><sp/>6,<sp/>41,<sp/>6,<sp/>42,<sp/>6,<sp/>43,<sp/>6,<sp/>41};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>walking:<sp/>finish<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Expected<sp/>behavior:<sp/>Player1<sp/>should<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>1<sp/>real<sp/>player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>39,<sp/>1,<sp/>6,<sp/>38,<sp/>3,<sp/>6,<sp/>42,<sp/>6,<sp/>43};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BUG-SPECIFIC<sp/>TEST<sp/>CASES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>Bug:<sp/>Player<sp/>1<sp/>throw<sp/>player<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Expected<sp/>behavior:<sp/>Player<sp/>3<sp/>should<sp/>be<sp/>thrown<sp/>and<sp/>immediatly<sp/>appear<sp/>in<sp/>his</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/>starting<sp/>square<sp/>3<sp/>real<sp/>players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>21,<sp/>6,<sp/>1,<sp/>6,<sp/>3,<sp/>2};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TEST_CASE<sp/>==<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Test<sp/>Bug:<sp/>Player<sp/>1<sp/>blink<sp/>in<sp/>finish<sp/>position<sp/>[seems<sp/>like<sp/>bug<sp/>appears<sp/>if<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/>position<sp/>is<sp/>occupied<sp/>by<sp/>other<sp/>player]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Expected<sp/>behavior:<sp/>Player<sp/>1<sp/>should</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>blink<sp/>in<sp/>his<sp/>finish<sp/>position<sp/>2<sp/>real<sp/>player</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>u8_dice_value_array[]<sp/>=<sp/>{6,<sp/>40,<sp/>6,<sp/>41,<sp/>6,<sp/>1,<sp/>0,<sp/>1};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/test/marked_dice.hpp"/>
+  </compounddef>
+</doxygen>

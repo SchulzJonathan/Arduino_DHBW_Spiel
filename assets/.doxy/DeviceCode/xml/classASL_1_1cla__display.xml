@@ -1,0 +1,1032 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classASL_1_1cla__display" kind="class" language="C++" prot="public">
+    <compoundname>ASL::cla_display</compoundname>
+    <includes refid="ASL_8hpp" local="no">ASL.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a218a1025ddcb08359dd25895c8a5202a" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_matrix_a</definition>
+        <argsstring></argsstring>
+        <name>u8_matrix_a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrix pin a <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="71" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a49b77b0545857860b3cefac3bcc6345b" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_matrix_b</definition>
+        <argsstring></argsstring>
+        <name>u8_matrix_b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrix pin b <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="72" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a40d346535013095a77ea2283a825cad4" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_matrix_c</definition>
+        <argsstring></argsstring>
+        <name>u8_matrix_c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrix pin c <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="73" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a116f16132c553ac0faf09860e3d4269f" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_matrix_clk</definition>
+        <argsstring></argsstring>
+        <name>u8_matrix_clk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrix pin clk </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="74" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1acd2f871d901e0accf10c47e7cfaa8d59" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_matrix_lat</definition>
+        <argsstring></argsstring>
+        <name>u8_matrix_lat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrix pin lat </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="75" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a3e09791c1975f8a5592f981a3cc2ab1b" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_matrix_oe</definition>
+        <argsstring></argsstring>
+        <name>u8_matrix_oe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>matrix pin oe <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="76" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1aabbb80655b217c843d02c0b35890405e" prot="private" static="no" mutable="no">
+        <type>RGBmatrixPanel *</type>
+        <definition>RGBmatrixPanel* ASL::cla_display::obj_matrix</definition>
+        <argsstring></argsstring>
+        <name>obj_matrix</name>
+        <briefdescription>
+<para>Pointer to the matrix object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="84" column="18" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a064ac2953722d68630a4a2fe4d3cba4d" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_track_positions[40][3]</definition>
+        <argsstring>[40][3]</argsstring>
+        <name>u8_track_positions</name>
+        <initializer>= {
+      {5, 2, 6},   {6, 3, 6},   {7, 4, 6},   {8, 5, 6},   {9, 6, 6},
+      {10, 6, 5},  {11, 6, 4},  {12, 6, 3},  {13, 6, 2},  {14, 7, 2},
+      {15, 8, 2},  {16, 8, 3},  {17, 8, 4},  {18, 8, 5},  {19, 8, 6},
+      {20, 9, 6},  {21, 10, 6}, {22, 11, 6}, {23, 12, 6}, {24, 12, 7},
+      {25, 12, 8}, {26, 11, 8}, {27, 10, 8}, {28, 9, 8},  {29, 8, 8},
+      {30, 8, 9},  {31, 8, 10}, {32, 8, 11}, {33, 8, 12}, {34, 7, 12},
+      {35, 6, 12}, {36, 6, 11}, {37, 6, 10}, {38, 6, 9},  {39, 6, 8},
+      {40, 5, 8},  {41, 4, 8},  {42, 3, 8},  {43, 2, 8},  {44, 2, 7},
+  }</initializer>
+        <briefdescription>
+<para>Stores the track positions. Order: track_position, x, y. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="94" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a4244dac564ee64eb39d8e14ec474131c" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_home_positions[4][4][2]</definition>
+        <argsstring>[4][4][2]</argsstring>
+        <name>u8_home_positions</name>
+        <initializer>= {
+      {{2, 2}, {2, 3}, {3, 2}, {3, 3}},
+      {{11, 2}, {11, 3}, {12, 2}, {12, 3}},
+      {{11, 11}, {11, 12}, {12, 11}, {12, 12}},
+      {{2, 11}, {2, 12}, {3, 11}, {3, 12}},
+  }</initializer>
+        <briefdescription>
+<para>Stores the players individual home Positions. Order: player_nr, token_nr, x/y. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="109" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a9805118a48808f72793a4e1ca05b00cf" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_finish_positions[4][4][2]</definition>
+        <argsstring>[4][4][2]</argsstring>
+        <name>u8_finish_positions</name>
+        <initializer>= {
+      {{3, 7}, {4, 7}, {5, 7}, {6, 7}},
+      {{7, 3}, {7, 4}, {7, 5}, {7, 6}},
+      {{11, 7}, {10, 7}, {9, 7}, {8, 7}},
+      {{7, 11}, {7, 10}, {7, 9}, {7, 8}},
+  }</initializer>
+        <briefdescription>
+<para>Stores the players individual finish Positions. Order: player_nr, token_nr, x/y. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="120" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1ac21190bb14e028f08fe7c526cf4027f8" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_smiley_postitions[26][2]</definition>
+        <argsstring>[26][2]</argsstring>
+        <name>u8_smiley_postitions</name>
+        <initializer>= {
+      {0, 2}, {0, 3}, {0, 4}, {0, 5}, {1, 1}, {1, 6}, {2, 0}, {2, 2}, {2, 4},
+      {2, 7}, {3, 0}, {3, 5}, {3, 7}, {4, 0}, {4, 5}, {4, 7}, {5, 0}, {5, 2},
+      {5, 4}, {5, 7}, {6, 1}, {6, 6}, {7, 2}, {7, 3}, {7, 4}, {7, 5}}</initializer>
+        <briefdescription>
+<para>Stores the smiley for the winner animation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="130" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a346aaa33dcc388151822e11161159fdc" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ASL::cla_display::u16_player_color[4][2]</definition>
+        <argsstring>[4][2]</argsstring>
+        <name>u16_player_color</name>
+        <initializer>= {
+      {0xf800, 0x1000},
+      {0x07e0, 0x00a0},
+      {0xffe0, 0x10a0},
+      {0x001f, 0x0002},
+  }</initializer>
+        <briefdescription>
+<para>Stores the Players Colors. Order: player_nr, bright/dark Initital values are blue, green, yellow, red. Values can be changed using the Set_Colors method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="140" column="12" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1ad5705fd505c2acfef8207b92696b2a11" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t ASL::cla_display::u16_track_color</definition>
+        <argsstring></argsstring>
+        <name>u16_track_color</name>
+        <initializer>= WHITE_BRIGHT</initializer>
+        <briefdescription>
+<para>Stores the Track Color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="150" column="12" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a67b523cfc082af4c9d1ac8a635b631c8" prot="private" static="no" mutable="no">
+        <type>en_blink_mode</type>
+        <definition>en_blink_mode ASL::cla_display::en_current_blink_mode</definition>
+        <argsstring></argsstring>
+        <name>en_current_blink_mode</name>
+        <initializer>= off</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current blink mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="154" column="17" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1aae3871e27bcd516963447b8991558386" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t ASL::cla_display::i8_blink_counter</definition>
+        <argsstring></argsstring>
+        <name>i8_blink_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current blink counter. Will count down to determine how many blink_clycles are left. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="159" column="10" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a82904982b2410e4276b7aea7faadc48e" prot="private" static="no" mutable="no">
+        <type>en_blink_type</type>
+        <definition>en_blink_type ASL::cla_display::en_current_blink_type</definition>
+        <argsstring></argsstring>
+        <name>en_current_blink_type</name>
+        <initializer>= token</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current blink type, determines what is blinking </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="161" column="17" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a56c7ffa332cea15acbdf147f048f757e" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_blink_player_number</definition>
+        <argsstring></argsstring>
+        <name>u8_blink_player_number</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>he number of the player to blink. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="163" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1aa01a1d4c70b43afa74de74454852b1df" prot="private" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t ASL::cla_display::i8_blink_second_player</definition>
+        <argsstring></argsstring>
+        <name>i8_blink_second_player</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of the second player to blink. Used in token, if occupied flag is set and in display for the second color. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="166" column="10" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a4e18945095c92f37272e93190d41fcdf" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_blink_old_position</definition>
+        <argsstring></argsstring>
+        <name>u8_blink_old_position</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>old position to blink in token mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="168" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1acbc9dbd98f9e5666beab85a89360690d" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_blink_new_position</definition>
+        <argsstring></argsstring>
+        <name>u8_blink_new_position</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>new position to blink in token mode </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="170" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classASL_1_1cla__display_1a03ed6ad78837bfae237a145301d303ae" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t ASL::cla_display::u8_blink_state</definition>
+        <argsstring></argsstring>
+        <name>u8_blink_state</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stores if we are currently in the on or off phase </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="172" column="11" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classASL_1_1cla__display_1ab1395c2de051abaf8e1417ab361307f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ASL::cla_display::cla_display</definition>
+        <argsstring>(uint8_t _u8_matrix_a, uint8_t u8_matrix_b, uint8_t u8_matrix_c, uint8_t u8_matrix_clk, uint8_t u8_lat, uint8_t u8_matrix_oe)</argsstring>
+        <name>cla_display</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_matrix_a</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>u8_matrix_b</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>u8_matrix_c</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>u8_matrix_clk</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>u8_lat</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>u8_matrix_oe</declname>
+        </param>
+        <briefdescription>
+<para>Constructor of the class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="178" column="3" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="18" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1aa8c679926f3e7e0404df7565ff82221e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Set_Colors</definition>
+        <argsstring>(uint8_t _u8_player_nr, uint16_t _u16_bright_color, uint16_t _u16_dark_color)</argsstring>
+        <name>Set_Colors</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_nr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>_u16_bright_color</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>_u16_dark_color</declname>
+        </param>
+        <briefdescription>
+<para>Set the Colors of the player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_player_nr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the Player (0:3) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u16_bright_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bright Color for the Player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u16_dark_color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Dark Color for the Player </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="188" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a11d03056498516718e0809d4e945d921" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Begin</definition>
+        <argsstring>()</argsstring>
+        <name>Begin</name>
+        <briefdescription>
+<para>Initial Setup. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function must be called ONCE at the beginning of the Code </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="196" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a9f7846cf922c88faa1634826575e76b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Track</definition>
+        <argsstring>()</argsstring>
+        <name>Display_Track</name>
+        <briefdescription>
+<para>Display the Track. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="201" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="46" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1aeab85412bd2af19469aacac7e6822e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Players</definition>
+        <argsstring>(uint8_t _u8_player_quantity, bool _bool_tokens_at_home=true)</argsstring>
+        <name>Display_Players</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_quantity</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_bool_tokens_at_home</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Display the Players all in home. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is supposed to be called when setting the Game up. It displays the number of players that are currently chosen.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_player_quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of Players to be displayed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="211" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="54" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a901637d104dfd90bb2b8bc56576e0dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Restore</definition>
+        <argsstring>()</argsstring>
+        <name>Display_Restore</name>
+        <briefdescription>
+<para>Restore Display to track only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="217" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a2cac763982a77f2da5ce5698967b1eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Current_Player</definition>
+        <argsstring>(int8_t _i8_current_player_number, int8_t _i8_tokens_at_home=-1)</argsstring>
+        <name>Display_Current_Player</name>
+        <param>
+          <type>int8_t</type>
+          <declname>_i8_current_player_number</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>_i8_tokens_at_home</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Display the Current Player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method can display the current player on the matrix.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_i8_current_player_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the current player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_tokens_at_home</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tokens at home, signaled by the bit position (1 &lt;&lt; tokennr -&gt; token is home). default: -1 (don&apos;t animate) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="228" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="95" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a989197689b1e78742197093ac1ea4d8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Progress</definition>
+        <argsstring>(int8_t _i8_current_player_number, uint8_t _u8_progress)</argsstring>
+        <name>Display_Progress</name>
+        <param>
+          <type>int8_t</type>
+          <declname>_i8_current_player_number</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_progress</declname>
+        </param>
+        <briefdescription>
+<para>Display the Progress This method can display the progress of the Player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_i8_current_player_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the current player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_progress</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The progress of the player. (0:28) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="238" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="105" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1ad6fd1aced2e7aa0087d6181ccc26076a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Char</definition>
+        <argsstring>(char _ch_first_letter=&apos; &apos;, char _ch_second_letter=&apos; &apos;, char _ch_third_letter=&apos; &apos;)</argsstring>
+        <name>Display_Char</name>
+        <param>
+          <type>char</type>
+          <declname>_ch_first_letter</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>_ch_second_letter</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>_ch_third_letter</declname>
+          <defval>&apos; &apos;</defval>
+        </param>
+        <briefdescription>
+<para>Display the Word. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_ch_first_letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first letter of the word to display. default: &apos; &apos;</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ch_second_letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second letter of the word to display. default: &apos; &apos; </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="247" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="112" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1ace499a0bfb8eb1a963ac7cafa2fdd119" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Clear_Right</definition>
+        <argsstring>()</argsstring>
+        <name>Display_Clear_Right</name>
+        <briefdescription>
+<para>clears the right half of the display. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="253" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="127" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1ad711e5fe23bfbbf3bef0d0521a50689b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Blink_Start</definition>
+        <argsstring>(en_blink_mode _en_blink_mode, int8_t _i8_blink_cycles, en_blink_type _en_blink_type, uint8_t _u8_blink_player_number, int8_t _i8_blink_second_player, uint8_t _u8_new_position=0, bool _bool_occupied_flag=true, uint8_t _u8_old_position=0)</argsstring>
+        <name>Blink_Start</name>
+        <param>
+          <type>en_blink_mode</type>
+          <declname>_en_blink_mode</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>_i8_blink_cycles</declname>
+        </param>
+        <param>
+          <type>en_blink_type</type>
+          <declname>_en_blink_type</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_blink_player_number</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>_i8_blink_second_player</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_new_position</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_bool_occupied_flag</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_old_position</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Blink method. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method can blink<itemizedlist>
+<listitem><para>a token to display possible Progress (token)</para>
+</listitem><listitem><para>two tokens alternating in the color of two players (token_thrown)</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_en_blink_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode of the blinking (fast/slow/off) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_i8_blink_cycles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of cycles to blink (-1: infinite) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_en_blink_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the blinking (token/token_thrown/starting_square/winner_animation) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_blink_player_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the player to blink. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_i8_blink_second_player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the second player to blink. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_new_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new position of the token. default: 0. Different use in case of blink_type starting_square: Tokens at home, signaled by the bit position (1 &lt;&lt; tokennr -&gt; token is home).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_bool_occupied_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag used in token mode to determine the color to alternate the new position to. default: true</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_old_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>old position of the token. default: 0 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="275" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="135" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1ac552462eed7ef7c916d6a3f228241a99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ASL::cla_display::Blink_Update</definition>
+        <argsstring>(bool _bool_isr_active)</argsstring>
+        <name>Blink_Update</name>
+        <param>
+          <type>bool</type>
+          <declname>_bool_isr_active</declname>
+        </param>
+        <briefdescription>
+<para>Update the Blink state. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_bool_isr_active</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag to determine if the function is called from an interupt service routine. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if the Blinking wasn&apos;t executed due to it possibly taking too long. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="289" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="180" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a7cbc5aa0a494b26b4268428d49d1a20a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Blink_Stop</definition>
+        <argsstring>()</argsstring>
+        <name>Blink_Stop</name>
+        <briefdescription>
+<para>Stop blinking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="294" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="270" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1ae19c6959d272e61b6a51dfefaae432b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ASL::cla_display::Blink_Is_On</definition>
+        <argsstring>()</argsstring>
+        <name>Blink_Is_On</name>
+        <briefdescription>
+<para>Is Blinking On? </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if blinking is on, false otherwise </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="301" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="326" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a15fce20f657570aeef685051938c16e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Modify_Position</definition>
+        <argsstring>(uint8_t _u8_position, uint8_t _u8_player_number, bool bool_remove)</argsstring>
+        <name>Modify_Position</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_position</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_number</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>bool_remove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="303" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="334" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1a7cf564eb2edb857e9ed46eec4017fff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Move_Token</definition>
+        <argsstring>(uint8_t _u8_player_nr, uint8_t _u8_remove_position, uint8_t _u8_add_position)</argsstring>
+        <name>Move_Token</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_nr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_remove_position</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_add_position</declname>
+        </param>
+        <briefdescription>
+<para>Move a Token. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This method can move a token.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_player_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chosen player </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_old_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>old position of the token </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_new_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new position of the token </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="315" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="369" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classASL_1_1cla__display_1ae6a1829713a38d0dc9a290dd832effd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASL::cla_display::Display_Dice</definition>
+        <argsstring>(uint8_t _u8_dice_value, uint8_t _u8_dice_roll_counter, int8_t _i8_current_player_number, bool _bool_animate=true)</argsstring>
+        <name>Display_Dice</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_dice_value</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_dice_roll_counter</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>_i8_current_player_number</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_bool_animate</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Display the dice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Display the Dice on the matrix. when Set to animate, it will play a small animation. The animation uses a simple delay instead of interupts, since the program is not supposed to keep running while the animation is played.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_dice_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to be displayed. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_dice_roll_counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the current roll. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_i8_current_player_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of the current player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_bool_animate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>flag to determine if the dice should be animated. should be handled with care as it uses Delay. default: true </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="331" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.cpp" bodystart="376" bodyend="488"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>display handler </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class handles all the functions and parameters needed to display the game. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" line="70" column="1" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp" bodystart="70" bodyend="334"/>
+    <listofallmembers>
+      <member refid="classASL_1_1cla__display_1a11d03056498516718e0809d4e945d921" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Begin</name></member>
+      <member refid="classASL_1_1cla__display_1ae19c6959d272e61b6a51dfefaae432b3" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Blink_Is_On</name></member>
+      <member refid="classASL_1_1cla__display_1ad711e5fe23bfbbf3bef0d0521a50689b" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Blink_Start</name></member>
+      <member refid="classASL_1_1cla__display_1a7cbc5aa0a494b26b4268428d49d1a20a" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Blink_Stop</name></member>
+      <member refid="classASL_1_1cla__display_1ac552462eed7ef7c916d6a3f228241a99" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Blink_Update</name></member>
+      <member refid="classASL_1_1cla__display_1ab1395c2de051abaf8e1417ab361307f1" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>cla_display</name></member>
+      <member refid="classASL_1_1cla__display_1ad6fd1aced2e7aa0087d6181ccc26076a" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Char</name></member>
+      <member refid="classASL_1_1cla__display_1ace499a0bfb8eb1a963ac7cafa2fdd119" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Clear_Right</name></member>
+      <member refid="classASL_1_1cla__display_1a2cac763982a77f2da5ce5698967b1eaa" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Current_Player</name></member>
+      <member refid="classASL_1_1cla__display_1ae6a1829713a38d0dc9a290dd832effd4" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Dice</name></member>
+      <member refid="classASL_1_1cla__display_1aeab85412bd2af19469aacac7e6822e2a" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Players</name></member>
+      <member refid="classASL_1_1cla__display_1a989197689b1e78742197093ac1ea4d8c" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Progress</name></member>
+      <member refid="classASL_1_1cla__display_1a901637d104dfd90bb2b8bc56576e0dc8" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Restore</name></member>
+      <member refid="classASL_1_1cla__display_1a9f7846cf922c88faa1634826575e76b2" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Display_Track</name></member>
+      <member refid="classASL_1_1cla__display_1a67b523cfc082af4c9d1ac8a635b631c8" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>en_current_blink_mode</name></member>
+      <member refid="classASL_1_1cla__display_1a82904982b2410e4276b7aea7faadc48e" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>en_current_blink_type</name></member>
+      <member refid="classASL_1_1cla__display_1aae3871e27bcd516963447b8991558386" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>i8_blink_counter</name></member>
+      <member refid="classASL_1_1cla__display_1aa01a1d4c70b43afa74de74454852b1df" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>i8_blink_second_player</name></member>
+      <member refid="classASL_1_1cla__display_1a15fce20f657570aeef685051938c16e5" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Modify_Position</name></member>
+      <member refid="classASL_1_1cla__display_1a7cf564eb2edb857e9ed46eec4017fff0" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Move_Token</name></member>
+      <member refid="classASL_1_1cla__display_1aabbb80655b217c843d02c0b35890405e" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>obj_matrix</name></member>
+      <member refid="classASL_1_1cla__display_1aa8c679926f3e7e0404df7565ff82221e" prot="public" virt="non-virtual"><scope>ASL::cla_display</scope><name>Set_Colors</name></member>
+      <member refid="classASL_1_1cla__display_1a346aaa33dcc388151822e11161159fdc" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u16_player_color</name></member>
+      <member refid="classASL_1_1cla__display_1ad5705fd505c2acfef8207b92696b2a11" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u16_track_color</name></member>
+      <member refid="classASL_1_1cla__display_1acbc9dbd98f9e5666beab85a89360690d" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_blink_new_position</name></member>
+      <member refid="classASL_1_1cla__display_1a4e18945095c92f37272e93190d41fcdf" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_blink_old_position</name></member>
+      <member refid="classASL_1_1cla__display_1a56c7ffa332cea15acbdf147f048f757e" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_blink_player_number</name></member>
+      <member refid="classASL_1_1cla__display_1a03ed6ad78837bfae237a145301d303ae" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_blink_state</name></member>
+      <member refid="classASL_1_1cla__display_1a9805118a48808f72793a4e1ca05b00cf" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_finish_positions</name></member>
+      <member refid="classASL_1_1cla__display_1a4244dac564ee64eb39d8e14ec474131c" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_home_positions</name></member>
+      <member refid="classASL_1_1cla__display_1a218a1025ddcb08359dd25895c8a5202a" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_matrix_a</name></member>
+      <member refid="classASL_1_1cla__display_1a49b77b0545857860b3cefac3bcc6345b" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_matrix_b</name></member>
+      <member refid="classASL_1_1cla__display_1a40d346535013095a77ea2283a825cad4" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_matrix_c</name></member>
+      <member refid="classASL_1_1cla__display_1a116f16132c553ac0faf09860e3d4269f" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_matrix_clk</name></member>
+      <member refid="classASL_1_1cla__display_1acd2f871d901e0accf10c47e7cfaa8d59" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_matrix_lat</name></member>
+      <member refid="classASL_1_1cla__display_1a3e09791c1975f8a5592f981a3cc2ab1b" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_matrix_oe</name></member>
+      <member refid="classASL_1_1cla__display_1ac21190bb14e028f08fe7c526cf4027f8" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_smiley_postitions</name></member>
+      <member refid="classASL_1_1cla__display_1a064ac2953722d68630a4a2fe4d3cba4d" prot="private" virt="non-virtual"><scope>ASL::cla_display</scope><name>u8_track_positions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

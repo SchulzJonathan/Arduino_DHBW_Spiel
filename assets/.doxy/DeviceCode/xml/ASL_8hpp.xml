@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ASL_8hpp" kind="file" language="C++">
+    <compoundname>ASL.hpp</compoundname>
+    <includes refid="defines_8hpp" local="no">../../include/defines.hpp</includes>
+    <includes local="no">RGBmatrixPanel.h</includes>
+    <includes local="no">inttypes.h</includes>
+    <includedby refid="ASL_8cpp" local="no">ASL.cpp</includedby>
+    <includedby refid="animations_8cpp" local="no">animations.cpp</includedby>
+    <includedby refid="interupt_8cpp" local="no">interupt.cpp</includedby>
+    <includedby refid="main_8cpp" local="no">main.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>../../include/defines.hpp</label>
+        <link refid="defines_8hpp"/>
+      </node>
+      <node id="1">
+        <label>ASL.hpp</label>
+        <link refid="ASL_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>RGBmatrixPanel.h</label>
+      </node>
+      <node id="4">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>interupt.cpp</label>
+        <link refid="interupt_8cpp"/>
+      </node>
+      <node id="2">
+        <label>ASL.cpp</label>
+        <link refid="ASL_8cpp"/>
+      </node>
+      <node id="1">
+        <label>ASL.hpp</label>
+        <link refid="ASL_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>animations.cpp</label>
+        <link refid="animations_8cpp"/>
+      </node>
+      <node id="5">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classASL_1_1cla__display" prot="public">ASL::cla_display</innerclass>
+    <innernamespace refid="namespaceASL">ASL</innernamespace>
+    <briefdescription>
+<para>This is the header file for the ASL library. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This file contains the forward declarations for:</para>
+<para><itemizedlist>
+<listitem><para>the cla_display class</para>
+</listitem><listitem><para>the <ref refid="ASL_8hpp_1aebdc20185c3fc61180b6ad4f3a37dbf9" kindref="member">ASL::Setup_Buttons()</ref> function</para>
+</listitem><listitem><para>the <ref refid="ASL_8hpp_1adfa0cf539e110937f4252a478a58f03c" kindref="member">ASL::Setup_Dice()</ref> function</para>
+</listitem><listitem><para>the <ref refid="ASL_8hpp_1a7934fe680f0a7806fbfc5dcbcf15c659" kindref="member">ASL::Roll_Dice()</ref> function</para>
+</listitem><listitem><para>the <ref refid="ASL_8hpp_1acf7c2599fd5c999d438922363ba8cf7e" kindref="member">ASL::Delay_256()</ref> function</para>
+</listitem></itemizedlist>
+</para>
+<para>The cla_display class is used to control the RGB LED Matrix. The <ref refid="ASL_8hpp_1aebdc20185c3fc61180b6ad4f3a37dbf9" kindref="member">Setup_Buttons()</ref> functions sets the interupt buttons. The <ref refid="ASL_8hpp_1adfa0cf539e110937f4252a478a58f03c" kindref="member">Setup_Dice()</ref> function sets a timer ot run from 0 to 5 for the dice roll. The <ref refid="ASL_8hpp_1a7934fe680f0a7806fbfc5dcbcf15c659" kindref="member">Roll_Dice()</ref> reads the value from the Timer that was set up in the <ref refid="ASL_8hpp_1adfa0cf539e110937f4252a478a58f03c" kindref="member">Setup_Dice()</ref> function. The <ref refid="ASL_8hpp_1acf7c2599fd5c999d438922363ba8cf7e" kindref="member">Delay_256()</ref> function is used to delay the program for a certain amount of time given by the transfer parameter. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ASL_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ASL_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;../../include/defines.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;RGBmatrixPanel.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Hardware-specific<sp/>library#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ASL<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="ASL_8hpp_1ae8e3e23f7f6ba23164a40d9e1ae2d321" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>display_setup_real_players<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>setup_real_players,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>1<sp/><sp/><sp/>0001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>modify_real_player_number,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>2<sp/><sp/><sp/>0010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>display_setup_computer_players,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3<sp/><sp/><sp/>0011</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>setup_computer_players,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>4<sp/><sp/><sp/>0100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>modify_computer_player_number,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>5<sp/><sp/><sp/>0101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>display_setup_computer_player_mode,<sp/></highlight><highlight class="comment">//<sp/>6<sp/><sp/><sp/>0110</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>setup_computer_player_mode,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>7<sp/><sp/><sp/>0111</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>modify_computer_player_mode,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>8<sp/><sp/><sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>init_game_logic,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>9<sp/><sp/><sp/>1001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>wait_for_dice_roll,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>10<sp/><sp/>1010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>roll_the_dice,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>11<sp/><sp/>1011</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>wait_for_player_input,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>12<sp/><sp/>1100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>display_token,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>13<sp/><sp/>1101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>validate_token,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>14<sp/><sp/>1110</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>move_token,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>15<sp/><sp/>1111</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>next_player,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>16<sp/>10000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>game_finished<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>17<sp/>10001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/>en_state;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/>off<sp/>=<sp/>0,<sp/>fast,<sp/>slow<sp/>}<sp/>en_blink_mode;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>token<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>token_thrown,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>starting_square,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>winner_animation</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/>en_blink_type;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classASL_1_1cla__display" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classASL_1_1cla__display" kindref="compound">cla_display</ref><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_matrix_a;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_matrix_b;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_matrix_c;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_matrix_clk;<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_matrix_lat;<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_matrix_oe;<sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TIMING_DEBUG_INTERN<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>RGBmatrixPanel<sp/>*obj_matrix;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TIMING_DEBUG_INTERN<sp/>!=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_track_positions[40][3]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{5,<sp/>2,<sp/>6},<sp/><sp/><sp/>{6,<sp/>3,<sp/>6},<sp/><sp/><sp/>{7,<sp/>4,<sp/>6},<sp/><sp/><sp/>{8,<sp/>5,<sp/>6},<sp/><sp/><sp/>{9,<sp/>6,<sp/>6},</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{10,<sp/>6,<sp/>5},<sp/><sp/>{11,<sp/>6,<sp/>4},<sp/><sp/>{12,<sp/>6,<sp/>3},<sp/><sp/>{13,<sp/>6,<sp/>2},<sp/><sp/>{14,<sp/>7,<sp/>2},</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{15,<sp/>8,<sp/>2},<sp/><sp/>{16,<sp/>8,<sp/>3},<sp/><sp/>{17,<sp/>8,<sp/>4},<sp/><sp/>{18,<sp/>8,<sp/>5},<sp/><sp/>{19,<sp/>8,<sp/>6},</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{20,<sp/>9,<sp/>6},<sp/><sp/>{21,<sp/>10,<sp/>6},<sp/>{22,<sp/>11,<sp/>6},<sp/>{23,<sp/>12,<sp/>6},<sp/>{24,<sp/>12,<sp/>7},</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{25,<sp/>12,<sp/>8},<sp/>{26,<sp/>11,<sp/>8},<sp/>{27,<sp/>10,<sp/>8},<sp/>{28,<sp/>9,<sp/>8},<sp/><sp/>{29,<sp/>8,<sp/>8},</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{30,<sp/>8,<sp/>9},<sp/><sp/>{31,<sp/>8,<sp/>10},<sp/>{32,<sp/>8,<sp/>11},<sp/>{33,<sp/>8,<sp/>12},<sp/>{34,<sp/>7,<sp/>12},</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{35,<sp/>6,<sp/>12},<sp/>{36,<sp/>6,<sp/>11},<sp/>{37,<sp/>6,<sp/>10},<sp/>{38,<sp/>6,<sp/>9},<sp/><sp/>{39,<sp/>6,<sp/>8},</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{40,<sp/>5,<sp/>8},<sp/><sp/>{41,<sp/>4,<sp/>8},<sp/><sp/>{42,<sp/>3,<sp/>8},<sp/><sp/>{43,<sp/>2,<sp/>8},<sp/><sp/>{44,<sp/>2,<sp/>7},</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_home_positions[4][4][2]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{2,<sp/>2},<sp/>{2,<sp/>3},<sp/>{3,<sp/>2},<sp/>{3,<sp/>3}},</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{11,<sp/>2},<sp/>{11,<sp/>3},<sp/>{12,<sp/>2},<sp/>{12,<sp/>3}},</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{11,<sp/>11},<sp/>{11,<sp/>12},<sp/>{12,<sp/>11},<sp/>{12,<sp/>12}},</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{2,<sp/>11},<sp/>{2,<sp/>12},<sp/>{3,<sp/>11},<sp/>{3,<sp/>12}},</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_finish_positions[4][4][2]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{3,<sp/>7},<sp/>{4,<sp/>7},<sp/>{5,<sp/>7},<sp/>{6,<sp/>7}},</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{7,<sp/>3},<sp/>{7,<sp/>4},<sp/>{7,<sp/>5},<sp/>{7,<sp/>6}},</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{11,<sp/>7},<sp/>{10,<sp/>7},<sp/>{9,<sp/>7},<sp/>{8,<sp/>7}},</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{{7,<sp/>11},<sp/>{7,<sp/>10},<sp/>{7,<sp/>9},<sp/>{7,<sp/>8}},</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_smiley_postitions[26][2]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{0,<sp/>2},<sp/>{0,<sp/>3},<sp/>{0,<sp/>4},<sp/>{0,<sp/>5},<sp/>{1,<sp/>1},<sp/>{1,<sp/>6},<sp/>{2,<sp/>0},<sp/>{2,<sp/>2},<sp/>{2,<sp/>4},</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{2,<sp/>7},<sp/>{3,<sp/>0},<sp/>{3,<sp/>5},<sp/>{3,<sp/>7},<sp/>{4,<sp/>0},<sp/>{4,<sp/>5},<sp/>{4,<sp/>7},<sp/>{5,<sp/>0},<sp/>{5,<sp/>2},</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{5,<sp/>4},<sp/>{5,<sp/>7},<sp/>{6,<sp/>1},<sp/>{6,<sp/>6},<sp/>{7,<sp/>2},<sp/>{7,<sp/>3},<sp/>{7,<sp/>4},<sp/>{7,<sp/>5}};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>uint16_t<sp/>u16_player_color[4][2]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{0xf800,<sp/>0x1000},</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{0x07e0,<sp/>0x00a0},</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{0xffe0,<sp/>0x10a0},</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{0x001f,<sp/>0x0002},</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>uint16_t<sp/>u16_track_color<sp/>=<sp/>WHITE_BRIGHT;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>---<sp/>variables<sp/>for<sp/>the<sp/>blink<sp/>function<sp/>---</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>en_blink_mode<sp/>en_current_blink_mode<sp/>=<sp/>off;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>int8_t<sp/>i8_blink_counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>en_blink_type<sp/>en_current_blink_type<sp/>=<sp/>token;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_blink_player_number<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>int8_t<sp/>i8_blink_second_player<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_blink_old_position<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_blink_new_position<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>uint8_t<sp/>u8_blink_state<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><ref refid="classASL_1_1cla__display_1ab1395c2de051abaf8e1417ab361307f1" kindref="member">cla_display</ref>(uint8_t<sp/>_u8_matrix_a,<sp/>uint8_t<sp/>u8_matrix_b,<sp/>uint8_t<sp/>u8_matrix_c,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>u8_matrix_clk,<sp/>uint8_t<sp/>u8_lat,<sp/>uint8_t<sp/>u8_matrix_oe);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1aa8c679926f3e7e0404df7565ff82221e" kindref="member">Set_Colors</ref>(uint8_t<sp/>_u8_player_nr,<sp/>uint16_t<sp/>_u16_bright_color,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>_u16_dark_color);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1a11d03056498516718e0809d4e945d921" kindref="member">Begin</ref>();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1a9f7846cf922c88faa1634826575e76b2" kindref="member">Display_Track</ref>();</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1aeab85412bd2af19469aacac7e6822e2a" kindref="member">Display_Players</ref>(uint8_t<sp/>_u8_player_quantity,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_bool_tokens_at_home<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1a901637d104dfd90bb2b8bc56576e0dc8" kindref="member">Display_Restore</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1a2cac763982a77f2da5ce5698967b1eaa" kindref="member">Display_Current_Player</ref>(int8_t<sp/>_i8_current_player_number,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>_i8_tokens_at_home<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1a989197689b1e78742197093ac1ea4d8c" kindref="member">Display_Progress</ref>(int8_t<sp/>_i8_current_player_number,<sp/>uint8_t<sp/>_u8_progress);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1ad6fd1aced2e7aa0087d6181ccc26076a" kindref="member">Display_Char</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>_ch_first_letter<sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>_ch_second_letter<sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>_ch_third_letter<sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1ace499a0bfb8eb1a963ac7cafa2fdd119" kindref="member">Display_Clear_Right</ref>();</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1ad711e5fe23bfbbf3bef0d0521a50689b" kindref="member">Blink_Start</ref>(en_blink_mode<sp/>_en_blink_mode,<sp/>int8_t<sp/>_i8_blink_cycles,</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>en_blink_type<sp/>_en_blink_type,</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_blink_player_number,</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>_i8_blink_second_player,<sp/>uint8_t<sp/>_u8_new_position<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_bool_occupied_flag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_old_position<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1ac552462eed7ef7c916d6a3f228241a99" kindref="member">Blink_Update</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_bool_isr_active);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1a7cbc5aa0a494b26b4268428d49d1a20a" kindref="member">Blink_Stop</ref>();</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1ae19c6959d272e61b6a51dfefaae432b3" kindref="member">Blink_Is_On</ref>();</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Modify_Position(uint8_t<sp/>_u8_position,<sp/>uint8_t<sp/>_u8_player_number,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>bool_remove);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1a7cf564eb2edb857e9ed46eec4017fff0" kindref="member">Move_Token</ref>(uint8_t<sp/>_u8_player_nr,<sp/>uint8_t<sp/>_u8_remove_position,</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>_u8_add_position);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classASL_1_1cla__display_1ae6a1829713a38d0dc9a290dd832effd4" kindref="member">Display_Dice</ref>(uint8_t<sp/>_u8_dice_value,<sp/>uint8_t<sp/>_u8_dice_roll_counter,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>_i8_current_player_number,</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_bool_animate<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ASL_8hpp_1aebdc20185c3fc61180b6ad4f3a37dbf9" kindref="member">Setup_Buttons</ref>();</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ASL_8hpp_1adfa0cf539e110937f4252a478a58f03c" kindref="member">Setup_Dice</ref>();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal">uint8_t<sp/><ref refid="ASL_8hpp_1a7934fe680f0a7806fbfc5dcbcf15c659" kindref="member">Roll_Dice</ref>();</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ASL_8hpp_1acf7c2599fd5c999d438922363ba8cf7e" kindref="member">Delay_256</ref>(uint16_t<sp/>_u16_delay);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>ASL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/ASL.hpp"/>
+  </compounddef>
+</doxygen>

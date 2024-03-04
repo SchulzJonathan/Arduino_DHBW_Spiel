@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1adb8fbfcb22cf61e95405408ec4c2519a" kind="variable"><name>i_pin</name></member>
+    <member refid="main_8cpp_1a579f9308d208e0da834d7dd644c7dbcb" kind="variable"><name>u32_start_time_high</name></member>
+    <member refid="main_8cpp_1aa417e7fce5a227afb6b69a7bc5478994" kind="variable"><name>u32_duration_high</name></member>
+    <member refid="main_8cpp_1a4cc5d37e75af8db981cc5218d7b79c77" kind="variable"><name>u32_start_time_low</name></member>
+    <member refid="main_8cpp_1a68cd29bd2dc47b16888c895bf61c1ac3" kind="variable"><name>u32_duration_low</name></member>
+    <member refid="main_8cpp_1ad06c097bf60ded77fe3596bba30163c2" kind="variable"><name>fl_high_frequency</name></member>
+    <member refid="main_8cpp_1abc322d0623752340cbffcfaf98e7b530" kind="variable"><name>fl_low_frequency</name></member>
+    <member refid="main_8cpp_1a6391abc5c451ea33456ff925ead8783a" kind="function"><name>Pin_Change</name></member>
+    <member refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
+    <member refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
+  </compound>
+  <compound refid="dir_a5ee031e87d12abe48a2fc4670eea239" kind="dir"><name>COD_ENG_OUT_Pruefgeraet</name>
+  </compound>
+  <compound refid="dir_6774b76becf5c1eba00b38f86dafd5a0" kind="dir"><name>Engineering</name>
+  </compound>
+  <compound refid="dir_6fb120e1e93f6ff794cb9ba09d32e262" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classLOGIC_1_1cla__computer__player" kind="class" language="C++" prot="public">
+    <compoundname>LOGIC::cla_computer_player</compoundname>
+    <basecompoundref refid="classLOGIC_1_1cla__player" prot="public" virt="non-virtual">LOGIC::cla_player</basecompoundref>
+    <includes refid="logic_8hpp" local="no">logic.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classLOGIC_1_1cla__computer__player_1acb2b156882646d003e6c5425fcee04c8" prot="protected" static="no" mutable="no">
+        <type>mode</type>
+        <definition>mode LOGIC::cla_computer_player::en_mode</definition>
+        <argsstring></argsstring>
+        <name>en_mode</name>
+        <briefdescription>
+<para>The mode of the computer opponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="230" column="8" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLOGIC_1_1cla__computer__player_1a01c27c08a102642ae508eace9a725094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LOGIC::cla_computer_player::cla_computer_player</definition>
+        <argsstring>(uint8_t _u8_player_id, uint8_t _u8_start_position, uint8_t _u8_computer_quantity, cla_session *_obj_my_session, mode _en_mode)</argsstring>
+        <name>cla_computer_player</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_player_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_start_position</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_computer_quantity</declname>
+        </param>
+        <param>
+          <type><ref refid="classLOGIC_1_1cla__session" kindref="compound">cla_session</ref> *</type>
+          <declname>_obj_my_session</declname>
+        </param>
+        <param>
+          <type>mode</type>
+          <declname>_en_mode</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classLOGIC_1_1cla__computer__player" kindref="compound">cla_computer_player</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_player_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_start_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The individual starting position of the player. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_computer_quantity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of computer controlled players. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_u8_mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode of the computer opponent. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="212" column="3" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="54" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__computer__player_1aa8eded142250f48bddb148faab855159" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int8_t</type>
+        <definition>int8_t LOGIC::cla_computer_player::Auto_Move</definition>
+        <argsstring>(uint8_t _u8_dice_value, bool &amp;_bool_occupied_flag, uint8_t &amp;_u8_old_position) override</argsstring>
+        <name>Auto_Move</name>
+        <reimplements refid="classLOGIC_1_1cla__player_1ab7f32fcee2004a688a1460113f85c96a">Auto_Move</reimplements>
+        <param>
+          <type>uint8_t</type>
+          <declname>_u8_dice_value</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>_bool_occupied_flag</declname>
+        </param>
+        <param>
+          <type>uint8_t &amp;</type>
+          <declname>_u8_old_position</declname>
+        </param>
+        <briefdescription>
+<para>Automatic movement for a computer opponent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_u8_dice_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the rolled dice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;_bool_occupied_flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to a variable to store the occupied flag. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;_u8_old_position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to a variable to store the old position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The token that was automatically moved. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="224" column="10" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.cpp" bodystart="305" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classLOGIC_1_1cla__computer__player_1a30916d96bd3812bddfc0ad4399eed67c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool LOGIC::cla_computer_player::Is_Computer</definition>
+        <argsstring>() const override</argsstring>
+        <name>Is_Computer</name>
+        <reimplements refid="classLOGIC_1_1cla__player_1a5f7af12ee434a5e52f9f6b915f4eff26">Is_Computer</reimplements>
+        <briefdescription>
+<para>Checks if the player is a computer opponent. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if the player is a computer opponent, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="227" column="16" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="227" bodyend="227"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class represents a computer opponent in the game. It provides methods for automatic movement of tokens. It is derived from the <ref refid="classLOGIC_1_1cla__player" kindref="compound">cla_player</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>LOGIC::cla_player</label>
+        <link refid="classLOGIC_1_1cla__player"/>
+      </node>
+      <node id="1">
+        <label>LOGIC::cla_computer_player</label>
+        <link refid="classLOGIC_1_1cla__computer__player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>LOGIC::cla_player</label>
+        <link refid="classLOGIC_1_1cla__player"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>obj_my_session</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>LOGIC::cla_computer_player</label>
+        <link refid="classLOGIC_1_1cla__computer__player"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>LOGIC::cla_session</label>
+        <link refid="classLOGIC_1_1cla__session"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>array_players</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" line="203" column="1" bodyfile="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/Game_Logic/logic.hpp" bodystart="203" bodyend="231"/>
+    <listofallmembers>
+      <member refid="classLOGIC_1_1cla__computer__player_1aa8eded142250f48bddb148faab855159" prot="public" virt="virtual"><scope>LOGIC::cla_computer_player</scope><name>Auto_Move</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a282fd5e0969fac08058069e87d7a3862" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Calculate_Possible_Position</name></member>
+      <member refid="classLOGIC_1_1cla__computer__player_1a01c27c08a102642ae508eace9a725094" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>cla_computer_player</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ae50a20169ea2277cd55998eb92428f06" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>cla_player</name></member>
+      <member refid="classLOGIC_1_1cla__computer__player_1acb2b156882646d003e6c5425fcee04c8" prot="protected" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>en_mode</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a36242f4593e02368371f34d84dd8ac45" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Get_Player_Progress</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ab5b9a21565141948deec8c3054617cbd" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Get_Player_Status</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ab5c4546ebf8e4665210452c5497bb91e" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Get_Start_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1aabf38e935588dae1a3f317165b8e59ce" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Get_Token_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a66ec5e5be3edfaa5427f844fbf48b0b2" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Get_Token_Progress</name></member>
+      <member refid="classLOGIC_1_1cla__computer__player_1a30916d96bd3812bddfc0ad4399eed67c" prot="public" virt="virtual"><scope>LOGIC::cla_computer_player</scope><name>Is_Computer</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ac5019340cd2420422b751c6da790c432" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Is_Start_Field_Occupied_By_Own_Token</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a53374f47a37c2efa0c591ff30a1ad0cc" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Move_Token</name></member>
+      <member refid="classLOGIC_1_1cla__player_1aac546958e8055055c5e0c574ddfcefdc" prot="protected" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>obj_my_session</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a83b1cea613c6c0c495ea586bfaf07a69" prot="public" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>Set_Token_Position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ae246e769b12eba6c8716d16e032a109a" prot="protected" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>u8_player_id</name></member>
+      <member refid="classLOGIC_1_1cla__player_1a7dc2813d75bd9f8d4932bc553089c91b" prot="protected" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>u8_start_position</name></member>
+      <member refid="classLOGIC_1_1cla__player_1ac6bb95fd9891b1d9d131a35112dd5c7e" prot="protected" virt="non-virtual"><scope>LOGIC::cla_computer_player</scope><name>u8_token_position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

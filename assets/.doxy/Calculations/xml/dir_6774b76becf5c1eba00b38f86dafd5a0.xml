@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_6774b76becf5c1eba00b38f86dafd5a0" kind="dir">
+    <compoundname>Engineering</compoundname>
+    <innerdir refid="dir_17970de91eb624507a74aaad367e0c70">COD_ENG_CALC_calculators</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/"/>
+  </compounddef>
+</doxygen>

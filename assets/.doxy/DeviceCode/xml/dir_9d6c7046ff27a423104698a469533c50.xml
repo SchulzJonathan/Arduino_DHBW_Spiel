@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_9d6c7046ff27a423104698a469533c50" kind="dir">
+    <compoundname>ASL</compoundname>
+    <innerfile refid="ASL_8cpp">ASL.cpp</innerfile>
+    <innerfile refid="ASL_8hpp">ASL.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/ASL/"/>
+  </compounddef>
+</doxygen>

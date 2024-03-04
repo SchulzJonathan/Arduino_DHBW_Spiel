@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_4020720c6a555fbd5bcbb296f9427588" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerdir refid="dir_9d6c7046ff27a423104698a469533c50">ASL</innerdir>
+    <innerdir refid="dir_a4eb90df38054bf38c8301b489299593">Game_Logic</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/runner/work/Arduino_DHBW_Spiel/Arduino_DHBW_Spiel/Engineering/COD_ENG_OUT_arduino_code/lib/"/>
+  </compounddef>
+</doxygen>

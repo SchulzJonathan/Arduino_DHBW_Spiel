@@ -1,0 +1,1778 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+    
+    
+      
+        <title>File ASL.cpp - Student Ärgere Dich nicht!</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/mermaid@10.8.0/dist/mermaid.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#file-aslcpp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Student Ärgere Dich nicht!" class="md-header__button md-logo" aria-label="Student Ärgere Dich nicht!" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Student Ärgere Dich nicht!
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              File ASL.cpp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Student Ärgere Dich nicht!" class="md-nav__button md-logo" aria-label="Student Ärgere Dich nicht!" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Student Ärgere Dich nicht!
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_REQ_RE_Requirements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Requirements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Design Description
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Design Description
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_DED_SYA_System_Architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Architektur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_DED_SOA_Software_Architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Software Architektur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Management and Development Plan
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Management and Development Plan
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_MAD_SH_Schedule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schedule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_MAD_CRO_Cost_Risk_Opportunities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cost, Risk and Opportunity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_MAD_SR_coding_rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Coding Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_MAD_COM_Configuration_Management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_TES_CAS_Test_Cases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test Specification and Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Engineering
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_ENG_TA_Trades_Analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trades and Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../DOC_ENG_DA_Additional_Drawings_and_Datasheets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Additional Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Device Code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Device Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All Pages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../annotated/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../namespaces/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../macros/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Makros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Test Code
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Test Code
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TestCode/links/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All Pages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TestCode/files/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TestCode/annotated/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TestCode/namespaces/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TestCode/functions/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TestCode/variables/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TestCode/macros/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Makros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Calculations
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Calculations
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculations/links/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    All Pages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculations/files/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculations/annotated/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculations/namespaces/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Namespaces
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculations/functions/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculations/variables/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Calculations/macros/index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Makros
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="file-aslcpp">File ASL.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_9d6c7046ff27a423104698a469533c50/"><strong>ASL</strong></a> <strong>&gt;</strong> <a href="../ASL_8cpp/"><strong>ASL.cpp</strong></a></p>
+<p><a href="../ASL_8cpp/">Go to the documentation of this file</a></p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ASL.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;Arduino.h&gt;</span>
+
+<span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">cla_display</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_matrix_a</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_matrix_b</span><span class="p">,</span>
+<span class="w">                              </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_matrix_c</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_matrix_clk</span><span class="p">,</span>
+<span class="w">                              </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_matrix_lat</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_matrix_oe</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">u8_matrix_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_matrix_a</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_matrix_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_matrix_b</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_matrix_c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_matrix_c</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_matrix_clk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_matrix_clk</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_matrix_lat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_matrix_lat</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_matrix_oe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_matrix_oe</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Set_Colors</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_player_nr</span><span class="p">,</span>
+<span class="w">                                  </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">_u16_bright_color</span><span class="p">,</span>
+<span class="w">                                  </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">_u16_dark_color</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_u8_player_nr</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u16_bright_color</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_u8_player_nr</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u16_dark_color</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Begin</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">RGBmatrixPanel</span><span class="w"> </span><span class="nf">obj_matrix_no_pointer</span><span class="p">(</span><span class="n">u8_matrix_a</span><span class="p">,</span><span class="w"> </span><span class="n">u8_matrix_b</span><span class="p">,</span><span class="w"> </span><span class="n">u8_matrix_c</span><span class="p">,</span>
+<span class="w">                                       </span><span class="n">u8_matrix_clk</span><span class="p">,</span><span class="w"> </span><span class="n">u8_matrix_lat</span><span class="p">,</span>
+<span class="w">                                       </span><span class="n">u8_matrix_oe</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix_no_pointer</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="w">  </span><span class="k">this</span><span class="o">-&gt;</span><span class="n">obj_matrix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">obj_matrix_no_pointer</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Set up starting board:</span>
+<span class="w">  </span><span class="n">Display_Track</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Track</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">40</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_track_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">u8_track_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span>
+<span class="w">                          </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">updateDisplay</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Players</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_player_quantity</span><span class="p">,</span>
+<span class="w">                                       </span><span class="kt">bool</span><span class="w"> </span><span class="n">_bool_tokens_at_home</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Home Positions:</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_u8_player_quantity</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_bool_tokens_at_home</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                                </span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">                                </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                                </span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">                                </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                              </span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="c1">// Finish Positions:</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_u8_player_quantity</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_finish_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                              </span><span class="n">u8_finish_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">                              </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]);</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_finish_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                              </span><span class="n">u8_finish_positions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Restore</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">fillScreen</span><span class="p">(</span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Display_Track</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Current_Player</span><span class="p">(</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">_i8_current_player_number</span><span class="p">,</span>
+<span class="w">                                              </span><span class="kt">int8_t</span><span class="w"> </span><span class="n">_i8_tokens_at_home</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawLine</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span>
+<span class="w">                       </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_i8_tokens_at_home</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Blink_Start</span><span class="p">(</span><span class="n">fast</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">starting_square</span><span class="p">,</span><span class="w"> </span><span class="n">_i8_current_player_number</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">                </span><span class="n">_i8_tokens_at_home</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Progress</span><span class="p">(</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">_i8_current_player_number</span><span class="p">,</span>
+<span class="w">                                        </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_progress</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawLine</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawLine</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">_u8_progress</span><span class="p">),</span><span class="w"> </span><span class="mi">14</span><span class="p">,</span>
+<span class="w">                       </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Char</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">_ch_first_letter</span><span class="p">,</span>
+<span class="w">                                    </span><span class="kt">char</span><span class="w"> </span><span class="n">_ch_second_letter</span><span class="p">,</span>
+<span class="w">                                    </span><span class="kt">char</span><span class="w"> </span><span class="n">_ch_third_letter</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// turn off the word pixels:</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">31</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawChar</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">_ch_first_letter</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawChar</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">_ch_second_letter</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawChar</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">_ch_third_letter</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Clear_Right</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">31</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Blink_Start</span><span class="p">(</span>
+<span class="w">    </span><span class="n">en_blink_mode</span><span class="w"> </span><span class="n">_en_blink_mode</span><span class="p">,</span><span class="w"> </span><span class="kt">int8_t</span><span class="w"> </span><span class="n">_i8_blink_cycles</span><span class="p">,</span>
+<span class="w">    </span><span class="n">en_blink_type</span><span class="w"> </span><span class="n">_en_blink_type</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_blink_player_number</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">int8_t</span><span class="w"> </span><span class="n">_i8_blink_second_player</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_new_position</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">_bool_occupied_flag</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_old_position</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// write transfer parameters to class variables:</span>
+<span class="w">  </span><span class="n">en_current_blink_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_en_blink_mode</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_i8_blink_cycles</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// if it is set to -1, we will blink forever.</span>
+<span class="w">    </span><span class="n">i8_blink_counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// multiply the blink cycles by 2, because the interupt routine will toggle</span>
+<span class="w">    </span><span class="c1">// AND subtract 1</span>
+<span class="w">    </span><span class="n">i8_blink_counter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">_i8_blink_cycles</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="n">en_current_blink_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_en_blink_type</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_blink_player_number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_blink_player_number</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_blink_old_position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_old_position</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_blink_new_position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u8_new_position</span><span class="p">;</span>
+<span class="w">  </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_bool_occupied_flag</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">i8_blink_second_player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_i8_blink_second_player</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">i8_blink_second_player</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="c1">// Setup Timer 4 to CTC Mode with a prescaler of 256:</span>
+<span class="w">  </span><span class="n">TCCR4A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">TCCR4B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// WGM 42:40 = 010 -&gt; CTC Mode</span>
+<span class="w">  </span><span class="n">TCCR4B</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">WGM42</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// CS 42:40 = 100 -&gt; Prescaler 256</span>
+<span class="w">  </span><span class="n">TCCR4B</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">CS42</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Set Output Compare:</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">en_current_blink_mode</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">fast</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Fast Blink</span>
+<span class="w">    </span><span class="n">OCR4A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FAST_BLINK</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">en_current_blink_mode</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">slow</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Slow Blink</span>
+<span class="w">    </span><span class="n">OCR4A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SLOW_BLINK</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="c1">// Enable Interupt for Output Compare A:</span>
+<span class="w">  </span><span class="n">TIMSK4</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">OCIE4A</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Blink_Update</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">_bool_isr_active</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Blinking is done in the interupt routine.</span>
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">en_current_blink_type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">token</span><span class="p">:</span><span class="w"> </span><span class="c1">// Token Blink</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_old_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">      </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_old_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i8_blink_second_player</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">i8_blink_second_player</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">token_thrown</span><span class="p">:</span><span class="w"> </span><span class="c1">// Token Blink</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">i8_blink_second_player</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">starting_square</span><span class="p">:</span><span class="w"> </span><span class="c1">// Starting Square Blink</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Turn off all starting square positions of the player:</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">u8_blink_player_number</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                              </span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">u8_blink_player_number</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">                              </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">u8_tokens_at_home</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u8_blink_new_position</span><span class="p">;</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_tokens_at_home</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x01</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">u8_tokens_at_home</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="no">winner_animation</span><span class="p">:</span><span class="w"> </span><span class="c1">// Winner Animation</span>
+<span class="w">    </span><span class="c1">// This animation is very cpu intensive, so we will only do it at the end of</span>
+<span class="w">    </span><span class="c1">// the loop funciton if the corresponding flag is set.</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_bool_isr_active</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Draw a Human beeing on the right side of the matrix:</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">u8_blink_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">u8_blink_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i8_blink_counter</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">i8_blink_counter</span><span class="o">--</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i8_blink_counter</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Blink_Stop</span><span class="p">();</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Blink_Stop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// make sure its actually blinking</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">en_current_blink_mode</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">off</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Disable Interupt for Output Compare A:</span>
+<span class="w">    </span><span class="n">TIMSK4</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="mb">0b11111110</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Reset Timer 4:</span>
+<span class="w">    </span><span class="n">TCCR4A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">TCCR4B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="n">OCR4A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// turn off Blink mode:</span>
+<span class="w">    </span><span class="n">en_current_blink_mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">off</span><span class="p">;</span>
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">en_current_blink_type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">token</span><span class="p">:</span>
+<span class="w">      </span><span class="c1">// Partially Reset display:</span>
+<span class="w">      </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_old_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i8_blink_second_player</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">i8_blink_second_player</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">token_thrown</span><span class="p">:</span>
+<span class="w">      </span><span class="c1">// Partially Reset display:</span>
+<span class="w">      </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">u8_blink_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">starting_square</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Partially Reset display:</span>
+<span class="w">      </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">u8_tokens_at_home</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u8_blink_new_position</span><span class="p">;</span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_tokens_at_home</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x01</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">u8_blink_player_number</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="n">u8_tokens_at_home</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="no">winner_animation</span><span class="p">:</span><span class="w"> </span><span class="c1">// Winner Animation</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_blink_state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Draw a Human beeing on the right side of the matrix:</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">                                </span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">26</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">19</span><span class="p">,</span>
+<span class="w">                                </span><span class="n">u8_smiley_postitions</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">bool</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Blink_Is_On</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">en_current_blink_mode</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">off</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Modify_Position</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_position</span><span class="p">,</span>
+<span class="w">                                       </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_player_number</span><span class="p">,</span>
+<span class="w">                                       </span><span class="kt">bool</span><span class="w"> </span><span class="n">bool_turn_on</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">u16_new_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Determine the new color of the pixel:</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">bool_turn_on</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">_u8_position</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">(</span><span class="n">_u8_position</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">45</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">u16_new_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_u8_player_number</span><span class="p">][</span><span class="mi">1</span><span class="p">];</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">u16_new_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">u16_new_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_u8_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">];</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="c1">// Draw the new pixel:</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_u8_position</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Starting Square</span>
+<span class="w">    </span><span class="n">_u8_position</span><span class="o">--</span><span class="p">;</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">_u8_player_number</span><span class="p">][</span><span class="n">_u8_position</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">                          </span><span class="n">u8_home_positions</span><span class="p">[</span><span class="n">_u8_player_number</span><span class="p">][</span><span class="n">_u8_position</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">                          </span><span class="n">u16_new_color</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">_u8_position</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">_u8_position</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">45</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Track</span>
+<span class="w">    </span><span class="n">_u8_position</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">u8_track_positions</span><span class="p">[</span><span class="n">_u8_position</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span>
+<span class="w">                          </span><span class="n">u8_track_positions</span><span class="p">[</span><span class="n">_u8_position</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">u16_new_color</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Finish Square</span>
+<span class="w">    </span><span class="n">_u8_position</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="mi">45</span><span class="p">;</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span>
+<span class="w">        </span><span class="n">u8_finish_positions</span><span class="p">[</span><span class="n">_u8_player_number</span><span class="p">][</span><span class="n">_u8_position</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+<span class="w">        </span><span class="n">u8_finish_positions</span><span class="p">[</span><span class="n">_u8_player_number</span><span class="p">][</span><span class="n">_u8_position</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">u16_new_color</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Move_Token</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_player_nr</span><span class="p">,</span>
+<span class="w">                                  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_old_position</span><span class="p">,</span>
+<span class="w">                                  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_new_position</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">_u8_old_position</span><span class="p">,</span><span class="w"> </span><span class="n">_u8_player_nr</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Modify_Position</span><span class="p">(</span><span class="n">_u8_new_position</span><span class="p">,</span><span class="w"> </span><span class="n">_u8_player_nr</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">cla_display</span><span class="o">::</span><span class="n">Display_Dice</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_dice_value</span><span class="p">,</span>
+<span class="w">                                    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">_u8_dice_roll_counter</span><span class="p">,</span>
+<span class="w">                                    </span><span class="kt">int8_t</span><span class="w"> </span><span class="n">_i8_current_player_number</span><span class="p">,</span>
+<span class="w">                                    </span><span class="kt">bool</span><span class="w"> </span><span class="n">_bool_animate</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Turn it all off:</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawRect</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_bool_animate</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// animate the rectangle drawing:</span>
+<span class="w">    </span><span class="c1">// set the rectangle values:</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">16</span><span class="p">;</span><span class="w"> </span><span class="c1">// top left corner</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// top left corner</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// draw rectangle clockwise:</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">width</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span>
+<span class="w">                            </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span><span class="n">Delay_256</span><span class="p">(</span><span class="n">ANIMATION_SPEED_DICE</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">height</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">,</span>
+<span class="w">                            </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span><span class="n">Delay_256</span><span class="p">(</span><span class="n">ANIMATION_SPEED_DICE</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span><span class="n">Delay_256</span><span class="p">(</span><span class="n">ANIMATION_SPEED_DICE</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">i</span><span class="p">,</span>
+<span class="w">                            </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">      </span><span class="n">Delay_256</span><span class="p">(</span><span class="n">ANIMATION_SPEED_DICE</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawRect</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">                         </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">_u8_dice_roll_counter</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mh">0x00</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                          </span><span class="n">u16_player_color</span><span class="p">[</span><span class="n">_i8_current_player_number</span><span class="p">][</span><span class="mi">0</span><span class="p">]);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">_u8_dice_value</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="p">:</span>
+<span class="w">    </span><span class="c1">// Just leave it turned off.</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="n">obj_matrix</span><span class="o">-&gt;</span><span class="n">drawPixel</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">u16_track_color</span><span class="p">);</span>
+<span class="w">    </span><span class="k">break</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">Setup_Buttons</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Set PIN 2 and 3 to Input with external pull-up. PIN 2 and 3 correspond to</span>
+<span class="w">  </span><span class="c1">// DDE4 and DDE5.</span>
+<span class="w">  </span><span class="c1">// Set DDRE pin 4 and 5 to input</span>
+<span class="w">  </span><span class="n">DDRE</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="mb">0b11001111</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Set PORTE pin 4 and 5 to non-pull-up.</span>
+<span class="w">  </span><span class="n">PORTE</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="mb">0b11001111</span><span class="p">;</span>
+<span class="w">  </span><span class="n">PORTE</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="mb">0b00110000</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">//  We want the interupt to occur on falling edge, so ISCn1 = 1 and ISCn0 =</span>
+<span class="w">  </span><span class="c1">//  0 last 4 bits for INT5 and INT4.</span>
+<span class="w">  </span><span class="n">EICRB</span><span class="w"> </span><span class="o">&amp;=</span><span class="w"> </span><span class="mb">0b11110000</span><span class="p">;</span>
+<span class="w">  </span><span class="n">EICRB</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="mb">0b00001010</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Enable INT4 and INT5:</span>
+<span class="w">  </span><span class="n">EIMSK</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="mb">0b00110000</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// enable Global interupt</span>
+<span class="w">  </span><span class="n">SREG</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="mb">0b10000000</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// we will use a timer to disable interupts fo a short period of time after</span>
+<span class="w">  </span><span class="c1">// the first button press.</span>
+<span class="w">  </span><span class="c1">// set prescaler to 1024 -&gt; frequency is now 15.625kHz</span>
+<span class="w">  </span><span class="c1">// -&gt; T of 1 count cycle : 0,000064s</span>
+<span class="w">  </span><span class="c1">// -&gt; T of 0x1000 count cycles: 4096 * 0,000064s = 0,262144s</span>
+<span class="w">  </span><span class="n">TCCR3A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">TCCR3B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Set Prescaler to 1024</span>
+<span class="w">  </span><span class="n">TCCR3B</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">CS32</span><span class="p">)</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">CS30</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Set Output Compare to 0,262144s:</span>
+<span class="w">  </span><span class="n">OCR3A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DEBOUNCE_TIME</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Enable Interupt:</span>
+<span class="w">  </span><span class="n">TIMSK3</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">OCIE3A</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">Setup_Dice</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="cp">#if DICE_MODE == 0</span>
+<span class="w">  </span><span class="c1">// The Dice will use Counter 0 (8 Bit Counter).</span>
+<span class="w">  </span><span class="c1">// Set WGM1 to 1 and WGM0 to 0 (last 2 bits): CTC mode</span>
+<span class="w">  </span><span class="n">TCCR0A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">WGM01</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// TCCR0A = 0b00000010;</span>
+<span class="w">  </span><span class="c1">// Set WGM2 to 0 (xxxx 0xxx)</span>
+<span class="w">  </span><span class="c1">// Set clock source to no prescaler (xxxx x001)</span>
+<span class="w">  </span><span class="n">TCCR0B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">CS00</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// TCCR0B = 0b00000001;</span>
+<span class="w">  </span><span class="c1">// set reset value to 5 (6 values: 0:5 -&gt; need to add 1 later to get dice</span>
+<span class="w">  </span><span class="c1">// value 1:6)</span>
+<span class="w">  </span><span class="n">OCR0A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x05</span><span class="p">;</span>
+<span class="cp">#elif DICE_MODE == 1</span>
+<span class="w">  </span><span class="c1">// Setup dice to read from Port L</span>
+<span class="w">  </span><span class="c1">// Set Port L to Input</span>
+<span class="w">  </span><span class="n">DDRL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x00</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Set Port L to Pull-Up</span>
+<span class="w">  </span><span class="n">PORTL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xff</span><span class="p">;</span>
+<span class="cp">#elif DICE_MODE == 2</span>
+<span class="w">  </span><span class="c1">// No setup needed.</span>
+<span class="cp">#endif</span>
+<span class="p">}</span>
+
+<span class="kt">uint8_t</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">Roll_Dice</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">//</span>
+<span class="cp">#if DICE_MODE == 0</span>
+<span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TCNT0</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="cp">#elif DICE_MODE == 1</span>
+<span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">~</span><span class="n">PINL</span><span class="p">;</span>
+<span class="cp">#elif DICE_MODE == 2</span>
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">u8_dice_value_array_position</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">u8_dice_value_array</span><span class="p">[</span><span class="n">u8_dice_value_array_position</span><span class="p">];</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">u8_dice_value_array_position</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="p">((</span><span class="k">sizeof</span><span class="p">(</span><span class="n">u8_dice_value_array</span><span class="p">))</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">u8_dice_value_array_position</span><span class="o">++</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">u8_dice_value_array_position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="cp">#endif</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">ASL</span><span class="o">::</span><span class="n">Delay_256</span><span class="p">(</span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">_u16_delay</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Set up Timer 5 to CTC Mode with a prescaler of 256:</span>
+<span class="w">  </span><span class="n">TCCR5A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">TCCR5B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">TCNT5</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// WGM 52:50 = 010 -&gt; CTC Mode</span>
+<span class="w">  </span><span class="n">TCCR5B</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">WGM52</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// CS 52:50 = 100 -&gt; Prescaler 256</span>
+<span class="w">  </span><span class="n">TCCR5B</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">CS52</span><span class="p">);</span>
+<span class="w">  </span><span class="c1">// Set Output Compare:</span>
+<span class="w">  </span><span class="n">OCR5A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_u16_delay</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Enable Interupt for Output Compare A:</span>
+<span class="w">  </span><span class="n">TIMSK5</span><span class="w"> </span><span class="o">|=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">OCIE5A</span><span class="p">;</span>
+<span class="w">  </span><span class="c1">// Wait for the interupt to finish:</span>
+<span class="w">  </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">TIMSK5</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">OCIE5A</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="c1">// Reset Timer 5:</span>
+<span class="w">  </span><span class="n">TCCR5A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="n">TCCR5B</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10.8.0/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
